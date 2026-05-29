@@ -1,0 +1,339 @@
+{
+  "version": "1.0.0",
+  "description": "Comprehensive OpenCode model configuration from OpenRouter",
+  "total_models": 58,
+  "categories": {
+    "flagship": {
+      "name": "Flagship Models",
+      "description": "Top-tier models for general purpose use",
+      "models": [
+        {
+          "id": "openai/gpt-5.2-pro",
+          "name": "OpenAI GPT-5.2 Pro",
+          "priority": "high"
+        },
+        {
+          "id": "anthropic/claude-opus-4.5",
+          "name": "Anthropic Claude Opus 4.5",
+          "priority": "high"
+        },
+        {
+          "id": "google/gemini-3-pro-preview",
+          "name": "Google Gemini 3 Pro",
+          "priority": "high"
+        },
+        {
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI GPT-5.2",
+          "priority": "high"
+        },
+        {
+          "id": "anthropic/claude-sonnet-4.5",
+          "name": "Anthropic Claude Sonnet 4.5",
+          "priority": "medium"
+        }
+      ]
+    },
+    "coding": {
+      "name": "Coding & Development",
+      "description": "Models optimized for programming and code generation",
+      "models": [
+        {
+          "id": "openai/gpt-5.2-codex",
+          "name": "OpenAI GPT-5.2 Codex",
+          "priority": "high"
+        },
+        {
+          "id": "openai/gpt-5.1-codex-max",
+          "name": "OpenAI GPT-5.1 Codex Max",
+          "priority": "high"
+        },
+        {
+          "id": "deepseek/deepseek-v3.2",
+          "name": "DeepSeek V3.2",
+          "priority": "high"
+        }
+      ]
+    },
+    "reasoning": {
+      "name": "Reasoning & Analysis",
+      "description": "Models with enhanced reasoning capabilities",
+      "models": [
+        {
+          "id": "openai/o3-deep-research",
+          "name": "OpenAI o3 Deep Research",
+          "priority": "high"
+        },
+        {
+          "id": "anthropic/claude-3.7-sonnet:thinking",
+          "name": "Claude 3.7 Sonnet Thinking",
+          "priority": "high"
+        },
+        {
+          "id": "qwen/qwen3-vl-8b-thinking",
+          "name": "Qwen3 VL 8B Thinking",
+          "priority": "medium"
+        }
+      ]
+    },
+    "fast_cheap": {
+      "name": "Fast & Affordable",
+      "description": "Quick responses for simple tasks",
+      "models": [
+        {
+          "id": "openai/gpt-audio-mini",
+          "name": "OpenAI GPT Audio Mini",
+          "priority": "high"
+        },
+        {
+          "id": "anthropic/claude-haiku-4.5",
+          "name": "Anthropic Claude Haiku 4.5",
+          "priority": "high"
+        },
+        {
+          "id": "google/gemini-2.5-flash-lite",
+          "name": "Google Gemini 2.5 Flash Lite",
+          "priority": "high"
+        },
+        {
+          "id": "openai/gpt-oss-120b:free",
+          "name": "OpenAI: gpt-oss-120b (free)",
+          "priority": "low"
+        },
+        {
+          "id": "openai/gpt-oss-20b:free",
+          "name": "OpenAI: gpt-oss-20b (free)",
+          "priority": "low"
+        },
+        {
+          "id": "google/gemma-3n-e2b-it:free",
+          "name": "Google: Gemma 3n 2B (free)",
+          "priority": "low"
+        },
+        {
+          "id": "google/gemma-3n-e4b-it:free",
+          "name": "Google: Gemma 3n 4B (free)",
+          "priority": "low"
+        },
+        {
+          "id": "google/gemma-3-4b-it:free",
+          "name": "Google: Gemma 3 4B (free)",
+          "priority": "low"
+        },
+        {
+          "id": "google/gemma-3-12b-it:free",
+          "name": "Google: Gemma 3 12B (free)",
+          "priority": "low"
+        },
+        {
+          "id": "google/gemma-3-27b-it:free",
+          "name": "Google: Gemma 3 27B (free)",
+          "priority": "low"
+        }
+      ]
+    },
+    "multimodal": {
+      "name": "Multimodal",
+      "description": "Models that can handle images and other media",
+      "models": [
+        {
+          "id": "openai/gpt-5-image",
+          "name": "OpenAI GPT-5 Image",
+          "priority": "high"
+        },
+        {
+          "id": "google/gemini-3-pro-image-preview",
+          "name": "Google Gemini 3 Pro Image",
+          "priority": "high"
+        },
+        {
+          "id": "qwen/qwen3-vl-32b-instruct",
+          "name": "Qwen3 VL 32B",
+          "priority": "high"
+        }
+      ]
+    },
+    "chinese": {
+      "name": "Chinese Models",
+      "description": "Chinese AI models with multilingual capabilities",
+      "models": [
+        {
+          "id": "moonshotai/kimi-k2.5",
+          "name": "MoonshotAI Kimi K2.5",
+          "priority": "high"
+        },
+        {
+          "id": "deepseek/deepseek-v3.2",
+          "name": "DeepSeek V3.2",
+          "priority": "high"
+        },
+        {
+          "id": "qwen/qwen3-vl-32b-instruct",
+          "name": "Qwen3 VL 32B",
+          "priority": "high"
+        },
+        {
+          "id": "z-ai/glm-4.7",
+          "name": "GLM 4.7",
+          "priority": "high"
+        },
+        {
+          "id": "moonshotai/kimi-k2.5",
+          "name": "MoonshotAI: Kimi K2.5",
+          "priority": "medium"
+        },
+        {
+          "id": "z-ai/glm-4.7-flash",
+          "name": "Z.AI: GLM 4.7 Flash",
+          "priority": "medium"
+        },
+        {
+          "id": "z-ai/glm-4.7",
+          "name": "Z.AI: GLM 4.7",
+          "priority": "medium"
+        },
+        {
+          "id": "z-ai/glm-4.6v",
+          "name": "Z.AI: GLM 4.6V",
+          "priority": "medium"
+        },
+        {
+          "id": "nex-agi/deepseek-v3.1-nex-n1",
+          "name": "Nex AGI: DeepSeek V3.1 Nex N1",
+          "priority": "medium"
+        },
+        {
+          "id": "deepseek/deepseek-v3.2-speciale",
+          "name": "DeepSeek: DeepSeek V3.2 Speciale",
+          "priority": "medium"
+        },
+        {
+          "id": "deepseek/deepseek-v3.2",
+          "name": "DeepSeek: DeepSeek V3.2",
+          "priority": "medium"
+        },
+        {
+          "id": "moonshotai/kimi-k2-thinking",
+          "name": "MoonshotAI: Kimi K2 Thinking",
+          "priority": "medium"
+        },
+        {
+          "id": "qwen/qwen3-vl-32b-instruct",
+          "name": "Qwen: Qwen3 VL 32B Instruct",
+          "priority": "medium"
+        },
+        {
+          "id": "qwen/qwen3-vl-8b-thinking",
+          "name": "Qwen: Qwen3 VL 8B Thinking",
+          "priority": "medium"
+        },
+        {
+          "id": "qwen/qwen3-vl-8b-instruct",
+          "name": "Qwen: Qwen3 VL 8B Instruct",
+          "priority": "medium"
+        },
+        {
+          "id": "qwen/qwen3-vl-30b-a3b-thinking",
+          "name": "Qwen: Qwen3 VL 30B A3B Thinking",
+          "priority": "medium"
+        },
+        {
+          "id": "qwen/qwen3-vl-30b-a3b-instruct",
+          "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+          "priority": "medium"
+        },
+        {
+          "id": "z-ai/glm-4.6",
+          "name": "Z.AI: GLM 4.6",
+          "priority": "medium"
+        },
+        {
+          "id": "z-ai/glm-4.6:exacto",
+          "name": "Z.AI: GLM 4.6 (exacto)",
+          "priority": "medium"
+        }
+      ]
+    },
+    "open_source": {
+      "name": "Open Source",
+      "description": "Community-driven open source models",
+      "models": [
+        {
+          "id": "mistralai/mistral-large-2512",
+          "name": "Mistral Large 3",
+          "priority": "high"
+        },
+        {
+          "id": "allenai/olmo-3.1-32b-instruct",
+          "name": "OLMo 3.1 32B",
+          "priority": "high"
+        },
+        {
+          "id": "mistralai/mistral-small-creative",
+          "name": "Mistral Small Creative",
+          "priority": "high"
+        },
+        {
+          "id": "allenai/molmo-2-8b:free",
+          "name": "AllenAI: Molmo2 8B (free)",
+          "priority": "medium"
+        },
+        {
+          "id": "allenai/olmo-3.1-32b-instruct",
+          "name": "AllenAI: Olmo 3.1 32B Instruct",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/mistral-small-creative",
+          "name": "Mistral: Mistral Small Creative",
+          "priority": "medium"
+        },
+        {
+          "id": "allenai/olmo-3.1-32b-think",
+          "name": "AllenAI: Olmo 3.1 32B Think",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/devstral-2512",
+          "name": "Mistral: Devstral 2 2512",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/ministral-14b-2512",
+          "name": "Mistral: Ministral 3 14B 2512",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/ministral-8b-2512",
+          "name": "Mistral: Ministral 3 8B 2512",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/ministral-3b-2512",
+          "name": "Mistral: Ministral 3 3B 2512",
+          "priority": "medium"
+        },
+        {
+          "id": "mistralai/mistral-large-2512",
+          "name": "Mistral: Mistral Large 3 2512",
+          "priority": "medium"
+        },
+        {
+          "id": "allenai/olmo-3-32b-think",
+          "name": "AllenAI: Olmo 3 32B Think",
+          "priority": "medium"
+        },
+        {
+          "id": "allenai/olmo-3-7b-instruct",
+          "name": "AllenAI: Olmo 3 7B Instruct",
+          "priority": "medium"
+        },
+        {
+          "id": "allenai/olmo-3-7b-think",
+          "name": "AllenAI: Olmo 3 7B Think",
+          "priority": "medium"
+        }
+      ]
+    }
+  }
+}

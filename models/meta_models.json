@@ -1,0 +1,130 @@
+[
+  {
+    "id": "deepcogito/cogito-v2-preview-llama-405b",
+    "name": "Deep Cogito: Cogito V2 Preview Llama 405B"
+  },
+  {
+    "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+    "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5"
+  },
+  {
+    "id": "deepcogito/cogito-v2-preview-llama-70b",
+    "name": "Deep Cogito: Cogito V2 Preview Llama 70B"
+  },
+  {
+    "id": "deepcogito/cogito-v2-preview-llama-109b-moe",
+    "name": "Cogito V2 Preview Llama 109B"
+  },
+  {
+    "id": "meta-llama/llama-guard-4-12b",
+    "name": "Meta: Llama Guard 4 12B"
+  },
+  {
+    "id": "alfredpros/codellama-7b-instruct-solidity",
+    "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity"
+  },
+  {
+    "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1"
+  },
+  {
+    "id": "meta-llama/llama-4-maverick",
+    "name": "Meta: Llama 4 Maverick"
+  },
+  {
+    "id": "meta-llama/llama-4-scout",
+    "name": "Meta: Llama 4 Scout"
+  },
+  {
+    "id": "meta-llama/llama-guard-3-8b",
+    "name": "Llama Guard 3 8B"
+  },
+  {
+    "id": "aion-labs/aion-rp-llama-3.1-8b",
+    "name": "AionLabs: Aion-RP 1.0 (8B)"
+  },
+  {
+    "id": "deepseek/deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek: R1 Distill Llama 70B"
+  },
+  {
+    "id": "meta-llama/llama-3.3-70b-instruct:free",
+    "name": "Meta: Llama 3.3 70B Instruct (free)"
+  },
+  {
+    "id": "meta-llama/llama-3.3-70b-instruct",
+    "name": "Meta: Llama 3.3 70B Instruct"
+  },
+  {
+    "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+    "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.2-3b-instruct:free",
+    "name": "Meta: Llama 3.2 3B Instruct (free)"
+  },
+  {
+    "id": "meta-llama/llama-3.2-3b-instruct",
+    "name": "Meta: Llama 3.2 3B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.2-1b-instruct",
+    "name": "Meta: Llama 3.2 1B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "name": "Meta: Llama 3.2 11B Vision Instruct"
+  },
+  {
+    "id": "neversleep/llama-3.1-lumimaid-8b",
+    "name": "NeverSleep: Lumimaid v0.2 8B"
+  },
+  {
+    "id": "nousresearch/hermes-3-llama-3.1-70b",
+    "name": "Nous: Hermes 3 70B Instruct"
+  },
+  {
+    "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+    "name": "Nous: Hermes 3 405B Instruct (free)"
+  },
+  {
+    "id": "nousresearch/hermes-3-llama-3.1-405b",
+    "name": "Nous: Hermes 3 405B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.1-405b",
+    "name": "Meta: Llama 3.1 405B (base)"
+  },
+  {
+    "id": "meta-llama/llama-3.1-8b-instruct",
+    "name": "Meta: Llama 3.1 8B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.1-405b-instruct:free",
+    "name": "Meta: Llama 3.1 405B Instruct (free)"
+  },
+  {
+    "id": "meta-llama/llama-3.1-405b-instruct",
+    "name": "Meta: Llama 3.1 405B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3.1-70b-instruct",
+    "name": "Meta: Llama 3.1 70B Instruct"
+  },
+  {
+    "id": "nousresearch/hermes-2-pro-llama-3-8b",
+    "name": "NousResearch: Hermes 2 Pro - Llama-3 8B"
+  },
+  {
+    "id": "meta-llama/llama-guard-2-8b",
+    "name": "Meta: LlamaGuard 2 8B"
+  },
+  {
+    "id": "meta-llama/llama-3-70b-instruct",
+    "name": "Meta: Llama 3 70B Instruct"
+  },
+  {
+    "id": "meta-llama/llama-3-8b-instruct",
+    "name": "Meta: Llama 3 8B Instruct"
+  }
+]

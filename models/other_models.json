@@ -1,0 +1,402 @@
+[
+  {
+    "id": "arcee-ai/trinity-large-preview:free",
+    "name": "Arcee AI: Trinity Large Preview (free)"
+  },
+  {
+    "id": "upstage/solar-pro-3:free",
+    "name": "Upstage: Solar Pro 3 (free)"
+  },
+  {
+    "id": "minimax/minimax-m2-her",
+    "name": "MiniMax: MiniMax M2-her"
+  },
+  {
+    "id": "writer/palmyra-x5",
+    "name": "Writer: Palmyra X5"
+  },
+  {
+    "id": "liquid/lfm-2.5-1.2b-thinking:free",
+    "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)"
+  },
+  {
+    "id": "liquid/lfm-2.5-1.2b-instruct:free",
+    "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)"
+  },
+  {
+    "id": "bytedance-seed/seed-1.6-flash",
+    "name": "ByteDance Seed: Seed 1.6 Flash"
+  },
+  {
+    "id": "bytedance-seed/seed-1.6",
+    "name": "ByteDance Seed: Seed 1.6"
+  },
+  {
+    "id": "minimax/minimax-m2.1",
+    "name": "MiniMax: MiniMax M2.1"
+  },
+  {
+    "id": "xiaomi/mimo-v2-flash",
+    "name": "Xiaomi: MiMo-V2-Flash"
+  },
+  {
+    "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+    "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
+  },
+  {
+    "id": "nvidia/nemotron-3-nano-30b-a3b",
+    "name": "NVIDIA: Nemotron 3 Nano 30B A3B"
+  },
+  {
+    "id": "relace/relace-search",
+    "name": "Relace: Relace Search"
+  },
+  {
+    "id": "essentialai/rnj-1-instruct",
+    "name": "EssentialAI: Rnj 1 Instruct"
+  },
+  {
+    "id": "openrouter/bodybuilder",
+    "name": "Body Builder (beta)"
+  },
+  {
+    "id": "amazon/nova-2-lite-v1",
+    "name": "Amazon: Nova 2 Lite"
+  },
+  {
+    "id": "arcee-ai/trinity-mini:free",
+    "name": "Arcee AI: Trinity Mini (free)"
+  },
+  {
+    "id": "arcee-ai/trinity-mini",
+    "name": "Arcee AI: Trinity Mini"
+  },
+  {
+    "id": "prime-intellect/intellect-3",
+    "name": "Prime Intellect: INTELLECT-3"
+  },
+  {
+    "id": "tngtech/tng-r1t-chimera:free",
+    "name": "TNG: R1T Chimera (free)"
+  },
+  {
+    "id": "tngtech/tng-r1t-chimera",
+    "name": "TNG: R1T Chimera"
+  },
+  {
+    "id": "x-ai/grok-4.1-fast",
+    "name": "xAI: Grok 4.1 Fast"
+  },
+  {
+    "id": "deepcogito/cogito-v2.1-671b",
+    "name": "Deep Cogito: Cogito v2.1 671B"
+  },
+  {
+    "id": "kwaipilot/kat-coder-pro",
+    "name": "Kwaipilot: KAT-Coder-Pro V1"
+  },
+  {
+    "id": "amazon/nova-premier-v1",
+    "name": "Amazon: Nova Premier 1.0"
+  },
+  {
+    "id": "perplexity/sonar-pro-search",
+    "name": "Perplexity: Sonar Pro Search"
+  },
+  {
+    "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)"
+  },
+  {
+    "id": "nvidia/nemotron-nano-12b-v2-vl",
+    "name": "NVIDIA: Nemotron Nano 12B 2 VL"
+  },
+  {
+    "id": "minimax/minimax-m2",
+    "name": "MiniMax: MiniMax M2"
+  },
+  {
+    "id": "liquid/lfm2-8b-a1b",
+    "name": "LiquidAI: LFM2-8B-A1B"
+  },
+  {
+    "id": "liquid/lfm-2.2-6b",
+    "name": "LiquidAI: LFM2-2.6B"
+  },
+  {
+    "id": "ibm-granite/granite-4.0-h-micro",
+    "name": "IBM: Granite 4.0 Micro"
+  },
+  {
+    "id": "baidu/ernie-4.5-21b-a3b-thinking",
+    "name": "Baidu: ERNIE 4.5 21B A3B Thinking"
+  },
+  {
+    "id": "thedrummer/cydonia-24b-v4.1",
+    "name": "TheDrummer: Cydonia 24B V4.1"
+  },
+  {
+    "id": "relace/relace-apply-3",
+    "name": "Relace: Relace Apply 3"
+  },
+  {
+    "id": "x-ai/grok-4-fast",
+    "name": "xAI: Grok 4 Fast"
+  },
+  {
+    "id": "opengvlab/internvl3-78b",
+    "name": "OpenGVLab: InternVL3 78B"
+  },
+  {
+    "id": "meituan/longcat-flash-chat",
+    "name": "Meituan: LongCat Flash Chat"
+  },
+  {
+    "id": "nvidia/nemotron-nano-9b-v2:free",
+    "name": "NVIDIA: Nemotron Nano 9B V2 (free)"
+  },
+  {
+    "id": "nvidia/nemotron-nano-9b-v2",
+    "name": "NVIDIA: Nemotron Nano 9B V2"
+  },
+  {
+    "id": "stepfun-ai/step3",
+    "name": "StepFun: Step3"
+  },
+  {
+    "id": "x-ai/grok-code-fast-1",
+    "name": "xAI: Grok Code Fast 1"
+  },
+  {
+    "id": "nousresearch/hermes-4-70b",
+    "name": "Nous: Hermes 4 70B"
+  },
+  {
+    "id": "nousresearch/hermes-4-405b",
+    "name": "Nous: Hermes 4 405B"
+  },
+  {
+    "id": "baidu/ernie-4.5-21b-a3b",
+    "name": "Baidu: ERNIE 4.5 21B A3B"
+  },
+  {
+    "id": "baidu/ernie-4.5-vl-28b-a3b",
+    "name": "Baidu: ERNIE 4.5 VL 28B A3B"
+  },
+  {
+    "id": "ai21/jamba-mini-1.7",
+    "name": "AI21: Jamba Mini 1.7"
+  },
+  {
+    "id": "ai21/jamba-large-1.7",
+    "name": "AI21: Jamba Large 1.7"
+  },
+  {
+    "id": "bytedance/ui-tars-1.5-7b",
+    "name": "ByteDance: UI-TARS 7B "
+  },
+  {
+    "id": "switchpoint/router",
+    "name": "Switchpoint Router"
+  },
+  {
+    "id": "x-ai/grok-4",
+    "name": "xAI: Grok 4"
+  },
+  {
+    "id": "tencent/hunyuan-a13b-instruct",
+    "name": "Tencent: Hunyuan A13B Instruct"
+  },
+  {
+    "id": "morph/morph-v3-large",
+    "name": "Morph: Morph V3 Large"
+  },
+  {
+    "id": "morph/morph-v3-fast",
+    "name": "Morph: Morph V3 Fast"
+  },
+  {
+    "id": "baidu/ernie-4.5-vl-424b-a47b",
+    "name": "Baidu: ERNIE 4.5 VL 424B A47B "
+  },
+  {
+    "id": "baidu/ernie-4.5-300b-a47b",
+    "name": "Baidu: ERNIE 4.5 300B A47B "
+  },
+  {
+    "id": "inception/mercury",
+    "name": "Inception: Mercury"
+  },
+  {
+    "id": "minimax/minimax-m1",
+    "name": "MiniMax: MiniMax M1"
+  },
+  {
+    "id": "x-ai/grok-3-mini",
+    "name": "xAI: Grok 3 Mini"
+  },
+  {
+    "id": "x-ai/grok-3",
+    "name": "xAI: Grok 3"
+  },
+  {
+    "id": "arcee-ai/spotlight",
+    "name": "Arcee AI: Spotlight"
+  },
+  {
+    "id": "arcee-ai/maestro-reasoning",
+    "name": "Arcee AI: Maestro Reasoning"
+  },
+  {
+    "id": "arcee-ai/virtuoso-large",
+    "name": "Arcee AI: Virtuoso Large"
+  },
+  {
+    "id": "arcee-ai/coder-large",
+    "name": "Arcee AI: Coder Large"
+  },
+  {
+    "id": "inception/mercury-coder",
+    "name": "Inception: Mercury Coder"
+  },
+  {
+    "id": "eleutherai/llemma_7b",
+    "name": "EleutherAI: Llemma 7b"
+  },
+  {
+    "id": "x-ai/grok-3-mini-beta",
+    "name": "xAI: Grok 3 Mini Beta"
+  },
+  {
+    "id": "x-ai/grok-3-beta",
+    "name": "xAI: Grok 3 Beta"
+  },
+  {
+    "id": "cohere/command-a",
+    "name": "Cohere: Command A"
+  },
+  {
+    "id": "thedrummer/skyfall-36b-v2",
+    "name": "TheDrummer: Skyfall 36B V2"
+  },
+  {
+    "id": "perplexity/sonar-reasoning-pro",
+    "name": "Perplexity: Sonar Reasoning Pro"
+  },
+  {
+    "id": "perplexity/sonar-pro",
+    "name": "Perplexity: Sonar Pro"
+  },
+  {
+    "id": "perplexity/sonar-deep-research",
+    "name": "Perplexity: Sonar Deep Research"
+  },
+  {
+    "id": "aion-labs/aion-1.0",
+    "name": "AionLabs: Aion-1.0"
+  },
+  {
+    "id": "aion-labs/aion-1.0-mini",
+    "name": "AionLabs: Aion-1.0-Mini"
+  },
+  {
+    "id": "perplexity/sonar",
+    "name": "Perplexity: Sonar"
+  },
+  {
+    "id": "minimax/minimax-01",
+    "name": "MiniMax: MiniMax-01"
+  },
+  {
+    "id": "sao10k/l3.1-70b-hanami-x1",
+    "name": "Sao10K: Llama 3.1 70B Hanami x1"
+  },
+  {
+    "id": "sao10k/l3.3-euryale-70b",
+    "name": "Sao10K: Llama 3.3 Euryale 70B"
+  },
+  {
+    "id": "cohere/command-r7b-12-2024",
+    "name": "Cohere: Command R7B (12-2024)"
+  },
+  {
+    "id": "amazon/nova-lite-v1",
+    "name": "Amazon: Nova Lite 1.0"
+  },
+  {
+    "id": "amazon/nova-micro-v1",
+    "name": "Amazon: Nova Micro 1.0"
+  },
+  {
+    "id": "amazon/nova-pro-v1",
+    "name": "Amazon: Nova Pro 1.0"
+  },
+  {
+    "id": "raifle/sorcererlm-8x22b",
+    "name": "SorcererLM 8x22B"
+  },
+  {
+    "id": "thedrummer/unslopnemo-12b",
+    "name": "TheDrummer: UnslopNemo 12B"
+  },
+  {
+    "id": "anthracite-org/magnum-v4-72b",
+    "name": "Magnum v4 72B"
+  },
+  {
+    "id": "inflection/inflection-3-pi",
+    "name": "Inflection: Inflection 3 Pi"
+  },
+  {
+    "id": "inflection/inflection-3-productivity",
+    "name": "Inflection: Inflection 3 Productivity"
+  },
+  {
+    "id": "thedrummer/rocinante-12b",
+    "name": "TheDrummer: Rocinante 12B"
+  },
+  {
+    "id": "cohere/command-r-08-2024",
+    "name": "Cohere: Command R (08-2024)"
+  },
+  {
+    "id": "cohere/command-r-plus-08-2024",
+    "name": "Cohere: Command R+ (08-2024)"
+  },
+  {
+    "id": "sao10k/l3.1-euryale-70b",
+    "name": "Sao10K: Llama 3.1 Euryale 70B v2.2"
+  },
+  {
+    "id": "sao10k/l3-lunaris-8b",
+    "name": "Sao10K: Llama 3 8B Lunaris"
+  },
+  {
+    "id": "sao10k/l3-euryale-70b",
+    "name": "Sao10k: Llama 3 Euryale 70B v2.1"
+  },
+  {
+    "id": "neversleep/noromaid-20b",
+    "name": "Noromaid 20B"
+  },
+  {
+    "id": "alpindale/goliath-120b",
+    "name": "Goliath 120B"
+  },
+  {
+    "id": "openrouter/auto",
+    "name": "Auto Router"
+  },
+  {
+    "id": "mancer/weaver",
+    "name": "Mancer: Weaver (alpha)"
+  },
+  {
+    "id": "undi95/remm-slerp-l2-13b",
+    "name": "ReMM SLERP 13B"
+  },
+  {
+    "id": "gryphe/mythomax-l2-13b",
+    "name": "MythoMax 13B"
+  }
+]

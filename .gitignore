@@ -1,0 +1,5 @@
+node_modules/
+.opencode/plans/
+*.bak
+*.old
+.DS_Store

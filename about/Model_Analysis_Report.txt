@@ -1,0 +1,159 @@
+=== OPENROUTER MODEL CATALOG ANALYSIS REPORT ===
+
+Source File: C:\Users\dlohn\.local\share\opencode\tool-output\tool_c05967b7a001mT6A9Qr3xFWdsw
+Analysis Date: Wed, Jan 28, 2026 12:16:44 PM
+
+=== COMPLETE MODEL INVENTORY ===
+OPENAI: 58 models
+Top examples:
+  1. OpenAI: GPT Audio (openai/gpt-audio)
+  2. OpenAI: GPT Audio Mini (openai/gpt-audio-mini)
+  3. OpenAI: GPT-5.2-Codex (openai/gpt-5.2-codex)
+  4. OpenAI: GPT-5.2 Chat (openai/gpt-5.2-chat)
+  5. OpenAI: GPT-5.2 Pro (openai/gpt-5.2-pro)
+  ... and 53 more
+
+ANTHROPIC: 11 models
+Top examples:
+  1. Anthropic: Claude Opus 4.5 (anthropic/claude-opus-4.5)
+  2. Anthropic: Claude Haiku 4.5 (anthropic/claude-haiku-4.5)
+  3. Anthropic: Claude Sonnet 4.5 (anthropic/claude-sonnet-4.5)
+  4. Anthropic: Claude Opus 4.1 (anthropic/claude-opus-4.1)
+  5. Anthropic: Claude Opus 4 (anthropic/claude-opus-4)
+  ... and 6 more
+
+GOOGLE: 25 models
+Top examples:
+  1. Google: Gemini 3 Flash Preview (google/gemini-3-flash-preview)
+  2. Google: Nano Banana Pro (Gemini 3 Pro Image Preview) (google/gemini-3-pro-image-preview)
+  3. Google: Gemini 3 Pro Preview (google/gemini-3-pro-preview)
+  4. Google: Gemini 2.5 Flash Image (Nano Banana) (google/gemini-2.5-flash-image)
+  5. Google: Gemini 2.5 Flash Preview 09-2025 (google/gemini-2.5-flash-preview-09-2025)
+  ... and 20 more
+
+META: 32 models
+Top examples:
+  1. Deep Cogito: Cogito V2 Preview Llama 405B (deepcogito/cogito-v2-preview-llama-405b)
+  2. NVIDIA: Llama 3.3 Nemotron Super 49B V1.5 (nvidia/llama-3.3-nemotron-super-49b-v1.5)
+  3. Deep Cogito: Cogito V2 Preview Llama 70B (deepcogito/cogito-v2-preview-llama-70b)
+  4. Cogito V2 Preview Llama 109B (deepcogito/cogito-v2-preview-llama-109b-moe)
+  5. Meta: Llama Guard 4 12B (meta-llama/llama-guard-4-12b)
+  ... and 27 more
+
+CHINESE: 78 models
+Top examples:
+  1. MoonshotAI: Kimi K2.5 (moonshotai/kimi-k2.5)
+  2. Z.AI: GLM 4.7 Flash (z-ai/glm-4.7-flash)
+  3. Z.AI: GLM 4.7 (z-ai/glm-4.7)
+  4. Z.AI: GLM 4.6V (z-ai/glm-4.6v)
+  5. Nex AGI: DeepSeek V3.1 Nex N1 (nex-agi/deepseek-v3.1-nex-n1)
+  ... and 73 more
+
+OPEN_SOURCE: 43 models
+Top examples:
+  1. AllenAI: Molmo2 8B (free) (allenai/molmo-2-8b:free)
+  2. AllenAI: Olmo 3.1 32B Instruct (allenai/olmo-3.1-32b-instruct)
+  3. Mistral: Mistral Small Creative (mistralai/mistral-small-creative)
+  4. AllenAI: Olmo 3.1 32B Think (allenai/olmo-3.1-32b-think)
+  5. Mistral: Devstral 2 2512 (mistralai/devstral-2512)
+  ... and 38 more
+
+OTHER: 100 models
+Top examples:
+  1. Arcee AI: Trinity Large Preview (free) (arcee-ai/trinity-large-preview:free)
+  2. Upstage: Solar Pro 3 (free) (upstage/solar-pro-3:free)
+  3. MiniMax: MiniMax M2-her (minimax/minimax-m2-her)
+  4. Writer: Palmyra X5 (writer/palmyra-x5)
+  5. LiquidAI: LFM2.5-1.2B-Thinking (free) (liquid/lfm-2.5-1.2b-thinking:free)
+  ... and 95 more
+
+TOTAL MODELS: 347
+
+=== CURATED OPencode CONFIGURATION ===
+Configuration Version: 1.0.0
+Total Curated Models: 58
+
+Flagship Models (flagship):
+  Description: Top-tier models for general purpose use
+  Models: 5
+  High Priority Models:
+    - OpenAI GPT-5.2 Pro
+    - Anthropic Claude Opus 4.5
+    - Google Gemini 3 Pro
+    - OpenAI GPT-5.2
+
+Coding & Development (coding):
+  Description: Models optimized for programming and code generation
+  Models: 3
+  High Priority Models:
+    - OpenAI GPT-5.2 Codex
+    - OpenAI GPT-5.1 Codex Max
+    - DeepSeek V3.2
+
+Reasoning & Analysis (reasoning):
+  Description: Models with enhanced reasoning capabilities
+  Models: 3
+  High Priority Models:
+    - OpenAI o3 Deep Research
+    - Claude 3.7 Sonnet Thinking
+
+Fast & Affordable (fast_cheap):
+  Description: Quick responses for simple tasks
+  Models: 10
+  High Priority Models:
+    - OpenAI GPT Audio Mini
+    - Anthropic Claude Haiku 4.5
+    - Google Gemini 2.5 Flash Lite
+
+Multimodal (multimodal):
+  Description: Models that can handle images and other media
+  Models: 3
+  High Priority Models:
+    - OpenAI GPT-5 Image
+    - Google Gemini 3 Pro Image
+    - Qwen3 VL 32B
+
+Chinese Models (chinese):
+  Description: Chinese AI models with multilingual capabilities
+  Models: 19
+  High Priority Models:
+    - MoonshotAI Kimi K2.5
+    - DeepSeek V3.2
+    - Qwen3 VL 32B
+    - GLM 4.7
+
+Open Source (open_source):
+  Description: Community-driven open source models
+  Models: 15
+  High Priority Models:
+    - Mistral Large 3
+    - OLMo 3.1 32B
+    - Mistral Small Creative
+
+=== RECOMMENDATIONS FOR OPencode ===
+
+1. FLAGSHIP MODELS - Use for general purpose tasks:
+   - OpenAI GPT-5.2 Pro (best overall)
+   - Anthropic Claude Opus 4.5 (reasoning)
+   - Google Gemini 3 Pro (multimodal)
+
+2. CODING SPECIALISTS - Use for development tasks:
+   - OpenAI GPT-5.2 Codex (premium coding)
+   - DeepSeek V3.2 (excellent coding, cost-effective)
+   - Qwen2.5 Coder (open source coding)
+
+3. CHINESE MODELS - Excellent multilingual capabilities:
+   - MoonshotAI Kimi K2.5 (flagship Chinese)
+   - Qwen3 VL series (vision + Chinese)
+   - DeepSeek V3.2 (strong coding + Chinese)
+   - GLM 4.7 series (Zhipu AI models)
+
+4. OPEN SOURCE ALTERNATIVES:
+   - Mistral Large 3 (European flagship)
+   - OLMo 3.1 32B (AllenAI open research)
+   - Molmo2 8B (free multimodal)
+
+5. FREE/Fast OPTIONS:
+   - Multiple Gemma models (Google free tier)
+   - GPT-OSS models (OpenAI open source)
+   - Claude Haiku 4.5 (fast Anthropic)

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "instructions": [
+    "AGENTS.md",
+    ".agent/gemini.md",
+    ".agent/rules/constitution.md",
+    ".agent/rules/code-standards.md",
+    ".agent/rules/adk_file_formating.md",
+    ".agent/rules/bmad_code_review_fast_path.md",
+    ".agent/rules/collaborative-debug-first.md",
+    ".agent/rules/credential-resolution.md",
+    ".agent/rules/dependency-awareness.md",
+    ".agent/rules/powershell-encoding-safety.md",
+    ".agent/rules/pyrefly-paths.md",
+    ".agent/rules/useEffect-dep-array-stability.md",
+    ".agent/rules/voice-agent-architecture.md",
+    ".agent/rules/prompt-tdd.md",
+    "_bmad-output/project-context.md"
+  ],
+  "skills": {
+    "paths": [".agent/skills"]
+  },
+  "permission": {
+    "edit": {
+      "_artifacts/**": "allow",
+      "*": "ask"
+    },
+    "webfetch": "allow",
+    "bash": {
+      "*": "allow",
+      "git push *": "ask",
+      "git reset --hard *": "ask",
+      "git commit *": "ask",
+      "git rebase *": "ask",
+      "rm *": "ask",
+      "Remove-Item *": "ask",
+      "del *": "ask",
+      "taskkill *": "ask",
+      "npm install *": "ask",
+      "npm i *": "ask",
+      "pip install *": "ask",
+      "uv add *": "ask",
+      "uv remove *": "ask",
+      "firebase deploy *": "ask",
+      "gcloud *": "ask"
+    },
+    "external_directory": {
+      "*": "ask",
+      "~/.config/opencode/**": "allow"
+    }
+  }
+}

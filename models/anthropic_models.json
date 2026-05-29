@@ -1,0 +1,46 @@
+[
+  {
+    "id": "anthropic/claude-opus-4.5",
+    "name": "Anthropic: Claude Opus 4.5"
+  },
+  {
+    "id": "anthropic/claude-haiku-4.5",
+    "name": "Anthropic: Claude Haiku 4.5"
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.5",
+    "name": "Anthropic: Claude Sonnet 4.5"
+  },
+  {
+    "id": "anthropic/claude-opus-4.1",
+    "name": "Anthropic: Claude Opus 4.1"
+  },
+  {
+    "id": "anthropic/claude-opus-4",
+    "name": "Anthropic: Claude Opus 4"
+  },
+  {
+    "id": "anthropic/claude-sonnet-4",
+    "name": "Anthropic: Claude Sonnet 4"
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet:thinking",
+    "name": "Anthropic: Claude 3.7 Sonnet (thinking)"
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet",
+    "name": "Anthropic: Claude 3.7 Sonnet"
+  },
+  {
+    "id": "anthropic/claude-3.5-haiku",
+    "name": "Anthropic: Claude 3.5 Haiku"
+  },
+  {
+    "id": "anthropic/claude-3.5-sonnet",
+    "name": "Anthropic: Claude 3.5 Sonnet"
+  },
+  {
+    "id": "anthropic/claude-3-haiku",
+    "name": "Anthropic: Claude 3 Haiku"
+  }
+]

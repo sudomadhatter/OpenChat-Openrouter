@@ -1,0 +1,174 @@
+[
+  {
+    "id": "allenai/molmo-2-8b:free",
+    "name": "AllenAI: Molmo2 8B (free)"
+  },
+  {
+    "id": "allenai/olmo-3.1-32b-instruct",
+    "name": "AllenAI: Olmo 3.1 32B Instruct"
+  },
+  {
+    "id": "mistralai/mistral-small-creative",
+    "name": "Mistral: Mistral Small Creative"
+  },
+  {
+    "id": "allenai/olmo-3.1-32b-think",
+    "name": "AllenAI: Olmo 3.1 32B Think"
+  },
+  {
+    "id": "mistralai/devstral-2512",
+    "name": "Mistral: Devstral 2 2512"
+  },
+  {
+    "id": "mistralai/ministral-14b-2512",
+    "name": "Mistral: Ministral 3 14B 2512"
+  },
+  {
+    "id": "mistralai/ministral-8b-2512",
+    "name": "Mistral: Ministral 3 8B 2512"
+  },
+  {
+    "id": "mistralai/ministral-3b-2512",
+    "name": "Mistral: Ministral 3 3B 2512"
+  },
+  {
+    "id": "mistralai/mistral-large-2512",
+    "name": "Mistral: Mistral Large 3 2512"
+  },
+  {
+    "id": "allenai/olmo-3-32b-think",
+    "name": "AllenAI: Olmo 3 32B Think"
+  },
+  {
+    "id": "allenai/olmo-3-7b-instruct",
+    "name": "AllenAI: Olmo 3 7B Instruct"
+  },
+  {
+    "id": "allenai/olmo-3-7b-think",
+    "name": "AllenAI: Olmo 3 7B Think"
+  },
+  {
+    "id": "mistralai/voxtral-small-24b-2507",
+    "name": "Mistral: Voxtral Small 24B 2507"
+  },
+  {
+    "id": "mistralai/mistral-medium-3.1",
+    "name": "Mistral: Mistral Medium 3.1"
+  },
+  {
+    "id": "mistralai/codestral-2508",
+    "name": "Mistral: Codestral 2508"
+  },
+  {
+    "id": "mistralai/devstral-medium",
+    "name": "Mistral: Devstral Medium"
+  },
+  {
+    "id": "mistralai/devstral-small",
+    "name": "Mistral: Devstral Small 1.1"
+  },
+  {
+    "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "name": "Venice: Uncensored (free)"
+  },
+  {
+    "id": "mistralai/mistral-small-3.2-24b-instruct",
+    "name": "Mistral: Mistral Small 3.2 24B"
+  },
+  {
+    "id": "nousresearch/deephermes-3-mistral-24b-preview",
+    "name": "Nous: DeepHermes 3 Mistral 24B Preview"
+  },
+  {
+    "id": "mistralai/mistral-medium-3",
+    "name": "Mistral: Mistral Medium 3"
+  },
+  {
+    "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+    "name": "Mistral: Mistral Small 3.1 24B (free)"
+  },
+  {
+    "id": "mistralai/mistral-small-3.1-24b-instruct",
+    "name": "Mistral: Mistral Small 3.1 24B"
+  },
+  {
+    "id": "allenai/olmo-2-0325-32b-instruct",
+    "name": "AllenAI: Olmo 2 32B Instruct"
+  },
+  {
+    "id": "mistralai/mistral-saba",
+    "name": "Mistral: Saba"
+  },
+  {
+    "id": "mistralai/mistral-small-24b-instruct-2501",
+    "name": "Mistral: Mistral Small 3"
+  },
+  {
+    "id": "microsoft/phi-4",
+    "name": "Microsoft: Phi 4"
+  },
+  {
+    "id": "mistralai/mistral-large-2411",
+    "name": "Mistral Large 2411"
+  },
+  {
+    "id": "mistralai/mistral-large-2407",
+    "name": "Mistral Large 2407"
+  },
+  {
+    "id": "mistralai/pixtral-large-2411",
+    "name": "Mistral: Pixtral Large 2411"
+  },
+  {
+    "id": "mistralai/ministral-8b",
+    "name": "Mistral: Ministral 8B"
+  },
+  {
+    "id": "mistralai/ministral-3b",
+    "name": "Mistral: Ministral 3B"
+  },
+  {
+    "id": "mistralai/pixtral-12b",
+    "name": "Mistral: Pixtral 12B"
+  },
+  {
+    "id": "mistralai/mistral-nemo",
+    "name": "Mistral: Mistral Nemo"
+  },
+  {
+    "id": "mistralai/mistral-7b-instruct",
+    "name": "Mistral: Mistral 7B Instruct"
+  },
+  {
+    "id": "mistralai/mistral-7b-instruct-v0.3",
+    "name": "Mistral: Mistral 7B Instruct v0.3"
+  },
+  {
+    "id": "mistralai/mixtral-8x22b-instruct",
+    "name": "Mistral: Mixtral 8x22B Instruct"
+  },
+  {
+    "id": "microsoft/wizardlm-2-8x22b",
+    "name": "WizardLM-2 8x22B"
+  },
+  {
+    "id": "mistralai/mistral-large",
+    "name": "Mistral Large"
+  },
+  {
+    "id": "mistralai/mistral-tiny",
+    "name": "Mistral Tiny"
+  },
+  {
+    "id": "mistralai/mistral-7b-instruct-v0.2",
+    "name": "Mistral: Mistral 7B Instruct v0.2"
+  },
+  {
+    "id": "mistralai/mixtral-8x7b-instruct",
+    "name": "Mistral: Mixtral 8x7B Instruct"
+  },
+  {
+    "id": "mistralai/mistral-7b-instruct-v0.1",
+    "name": "Mistral: Mistral 7B Instruct v0.1"
+  }
+]

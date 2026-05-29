@@ -1,0 +1,2130 @@
+{
+  "opencode_models": {
+    "providers": {
+      "openai": {
+        "name": "OpenAI",
+        "description": "Official OpenAI GPT models",
+        "models": {
+          "openai/gpt-audio": {
+            "name": "OpenAI - GPT Audio",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-audio"
+          },
+          "openai/gpt-audio-mini": {
+            "name": "OpenAI - GPT Audio Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-audio-mini"
+          },
+          "openai/gpt-5.2-codex": {
+            "name": "OpenAI - GPT-5.2-Codex",
+            "use_case": "coding",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.2-codex"
+          },
+          "openai/gpt-5.2-chat": {
+            "name": "OpenAI - GPT-5.2 Chat",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.2-chat"
+          },
+          "openai/gpt-5.2-pro": {
+            "name": "OpenAI - GPT-5.2 Pro",
+            "use_case": "professional",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.2-pro"
+          },
+          "openai/gpt-5.2": {
+            "name": "OpenAI - GPT-5.2",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.2"
+          },
+          "openai/gpt-5.1-codex-max": {
+            "name": "OpenAI - GPT-5.1-Codex-Max",
+            "use_case": "coding",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.1-codex-max"
+          },
+          "openai/gpt-5.1": {
+            "name": "OpenAI - GPT-5.1",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.1"
+          },
+          "openai/gpt-5.1-chat": {
+            "name": "OpenAI - GPT-5.1 Chat",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.1-chat"
+          },
+          "openai/gpt-5.1-codex": {
+            "name": "OpenAI - GPT-5.1-Codex",
+            "use_case": "coding",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.1-codex"
+          },
+          "openai/gpt-5.1-codex-mini": {
+            "name": "OpenAI - GPT-5.1-Codex-Mini",
+            "use_case": "coding",
+            "provider": "openai",
+            "original_id": "openai/gpt-5.1-codex-mini"
+          },
+          "openai/gpt-oss-safeguard-20b": {
+            "name": "OpenAI - gpt-oss-safeguard-20b",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-safeguard-20b"
+          },
+          "openai/gpt-5-image-mini": {
+            "name": "OpenAI - GPT-5 Image Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-image-mini"
+          },
+          "openai/gpt-5-image": {
+            "name": "OpenAI - GPT-5 Image",
+            "use_case": "multimodal",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-image"
+          },
+          "openai/o3-deep-research": {
+            "name": "OpenAI - o3 Deep Research",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/o3-deep-research"
+          },
+          "openai/o4-mini-deep-research": {
+            "name": "OpenAI - o4 Mini Deep Research",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/o4-mini-deep-research"
+          },
+          "openai/gpt-5-pro": {
+            "name": "OpenAI - GPT-5 Pro",
+            "use_case": "professional",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-pro"
+          },
+          "openai/gpt-5-codex": {
+            "name": "OpenAI - GPT-5 Codex",
+            "use_case": "coding",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-codex"
+          },
+          "openai/gpt-4o-audio-preview": {
+            "name": "OpenAI - GPT-4o Audio",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-audio-preview"
+          },
+          "openai/gpt-5-chat": {
+            "name": "OpenAI - GPT-5 Chat",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-chat"
+          },
+          "openai/gpt-5": {
+            "name": "OpenAI - GPT-5",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5"
+          },
+          "openai/gpt-5-mini": {
+            "name": "OpenAI - GPT-5 Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-mini"
+          },
+          "openai/gpt-5-nano": {
+            "name": "OpenAI - GPT-5 Nano",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-5-nano"
+          },
+          "openai/gpt-oss-120b:free": {
+            "name": "OpenAI - gpt-oss-120b (Free)",
+            "use_case": "free",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-120b:free"
+          },
+          "openai/gpt-oss-120b": {
+            "name": "OpenAI - gpt-oss-120b",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-120b"
+          },
+          "openai/gpt-oss-120b:exacto": {
+            "name": "OpenAI - gpt-oss-120b (exacto)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-120b:exacto"
+          },
+          "openai/gpt-oss-20b:free": {
+            "name": "OpenAI - gpt-oss-20b (Free)",
+            "use_case": "free",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-20b:free"
+          },
+          "openai/gpt-oss-20b": {
+            "name": "OpenAI - gpt-oss-20b",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-oss-20b"
+          },
+          "openai/o3-pro": {
+            "name": "OpenAI - o3 Pro",
+            "use_case": "professional",
+            "provider": "openai",
+            "original_id": "openai/o3-pro"
+          },
+          "openai/o4-mini-high": {
+            "name": "OpenAI - o4 Mini High",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/o4-mini-high"
+          },
+          "openai/o3": {
+            "name": "OpenAI - o3",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/o3"
+          },
+          "openai/o4-mini": {
+            "name": "OpenAI - o4 Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/o4-mini"
+          },
+          "openai/gpt-4.1": {
+            "name": "OpenAI - GPT-4.1",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4.1"
+          },
+          "openai/gpt-4.1-mini": {
+            "name": "OpenAI - GPT-4.1 Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-4.1-mini"
+          },
+          "openai/gpt-4.1-nano": {
+            "name": "OpenAI - GPT-4.1 Nano",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4.1-nano"
+          },
+          "openai/o1-pro": {
+            "name": "OpenAI - o1-pro",
+            "use_case": "professional",
+            "provider": "openai",
+            "original_id": "openai/o1-pro"
+          },
+          "openai/gpt-4o-mini-search-preview": {
+            "name": "OpenAI - GPT-4o-mini Search Preview",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-mini-search-preview"
+          },
+          "openai/gpt-4o-search-preview": {
+            "name": "OpenAI - GPT-4o Search Preview",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-search-preview"
+          },
+          "openai/o3-mini-high": {
+            "name": "OpenAI - o3 Mini High",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/o3-mini-high"
+          },
+          "openai/o3-mini": {
+            "name": "OpenAI - o3 Mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/o3-mini"
+          },
+          "openai/o1": {
+            "name": "OpenAI - o1",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/o1"
+          },
+          "openai/gpt-4o-2024-11-20": {
+            "name": "OpenAI - GPT-4o (2024-11-20)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-2024-11-20"
+          },
+          "openai/chatgpt-4o-latest": {
+            "name": "OpenAI - ChatGPT-4o",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/chatgpt-4o-latest"
+          },
+          "openai/gpt-4o-2024-08-06": {
+            "name": "OpenAI - GPT-4o (2024-08-06)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-2024-08-06"
+          },
+          "openai/gpt-4o-mini-2024-07-18": {
+            "name": "OpenAI - GPT-4o-mini (2024-07-18)",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-mini-2024-07-18"
+          },
+          "openai/gpt-4o-mini": {
+            "name": "OpenAI - GPT-4o-mini",
+            "use_case": "fast",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-mini"
+          },
+          "openai/gpt-4o-2024-05-13": {
+            "name": "OpenAI - GPT-4o (2024-05-13)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o-2024-05-13"
+          },
+          "openai/gpt-4o": {
+            "name": "OpenAI - GPT-4o",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o"
+          },
+          "openai/gpt-4o:extended": {
+            "name": "OpenAI - GPT-4o (extended)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4o:extended"
+          },
+          "openai/gpt-4-turbo": {
+            "name": "OpenAI - GPT-4 Turbo",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4-turbo"
+          },
+          "openai/gpt-3.5-turbo-0613": {
+            "name": "OpenAI - GPT-3.5 Turbo (older v0613)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-3.5-turbo-0613"
+          },
+          "openai/gpt-4-turbo-preview": {
+            "name": "OpenAI - GPT-4 Turbo Preview",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4-turbo-preview"
+          },
+          "openai/gpt-4-1106-preview": {
+            "name": "OpenAI - GPT-4 Turbo (older v1106)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4-1106-preview"
+          },
+          "openai/gpt-3.5-turbo-instruct": {
+            "name": "OpenAI - GPT-3.5 Turbo Instruct",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-3.5-turbo-instruct"
+          },
+          "openai/gpt-3.5-turbo-16k": {
+            "name": "OpenAI - GPT-3.5 Turbo 16k",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-3.5-turbo-16k"
+          },
+          "openai/gpt-4-0314": {
+            "name": "OpenAI - GPT-4 (older v0314)",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4-0314"
+          },
+          "openai/gpt-4": {
+            "name": "OpenAI - GPT-4",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-4"
+          },
+          "openai/gpt-3.5-turbo": {
+            "name": "OpenAI - GPT-3.5 Turbo",
+            "use_case": "general",
+            "provider": "openai",
+            "original_id": "openai/gpt-3.5-turbo"
+          }
+        }
+      },
+      "anthropic": {
+        "name": "Anthropic",
+        "description": "Official Anthropic Claude models",
+        "models": {
+          "anthropic/claude-opus-4.5": {
+            "name": "Anthropic - Claude Opus 4.5",
+            "use_case": "professional",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-opus-4.5"
+          },
+          "anthropic/claude-haiku-4.5": {
+            "name": "Anthropic - Claude Haiku 4.5",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-haiku-4.5"
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "name": "Anthropic - Claude Sonnet 4.5",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-sonnet-4.5"
+          },
+          "anthropic/claude-opus-4.1": {
+            "name": "Anthropic - Claude Opus 4.1",
+            "use_case": "professional",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-opus-4.1"
+          },
+          "anthropic/claude-opus-4": {
+            "name": "Anthropic - Claude Opus 4",
+            "use_case": "professional",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-opus-4"
+          },
+          "anthropic/claude-sonnet-4": {
+            "name": "Anthropic - Claude Sonnet 4",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-sonnet-4"
+          },
+          "anthropic/claude-3.7-sonnet:thinking": {
+            "name": "Anthropic - Claude 3.7 Sonnet (Thinking)",
+            "use_case": "reasoning",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-3.7-sonnet:thinking"
+          },
+          "anthropic/claude-3.7-sonnet": {
+            "name": "Anthropic - Claude 3.7 Sonnet",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-3.7-sonnet"
+          },
+          "anthropic/claude-3.5-haiku": {
+            "name": "Anthropic - Claude 3.5 Haiku",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-3.5-haiku"
+          },
+          "anthropic/claude-3.5-sonnet": {
+            "name": "Anthropic - Claude 3.5 Sonnet",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-3.5-sonnet"
+          },
+          "anthropic/claude-3-haiku": {
+            "name": "Anthropic - Claude 3 Haiku",
+            "use_case": "general",
+            "provider": "anthropic",
+            "original_id": "anthropic/claude-3-haiku"
+          }
+        }
+      },
+      "google": {
+        "name": "Google",
+        "description": "Google Gemini models",
+        "models": {
+          "google/gemini-3-flash-preview": {
+            "name": "Google - Gemini 3 Flash Preview",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-3-flash-preview"
+          },
+          "google/gemini-3-pro-image-preview": {
+            "name": "Google - Nano Banana Pro (Gemini 3 Pro Image Preview)",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-3-pro-image-preview"
+          },
+          "google/gemini-3-pro-preview": {
+            "name": "Google - Gemini 3 Pro Preview",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-3-pro-preview"
+          },
+          "google/gemini-2.5-flash-image": {
+            "name": "Google - Gemini 2.5 Flash Image (Nano Banana)",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-flash-image"
+          },
+          "google/gemini-2.5-flash-preview-09-2025": {
+            "name": "Google - Gemini 2.5 Flash Preview 09-2025",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-flash-preview-09-2025"
+          },
+          "google/gemini-2.5-flash-lite-preview-09-2025": {
+            "name": "Google - Gemini 2.5 Flash Lite Preview 09-2025",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-flash-lite-preview-09-2025"
+          },
+          "google/gemini-2.5-flash-lite": {
+            "name": "Google - Gemini 2.5 Flash Lite",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-flash-lite"
+          },
+          "google/gemma-3n-e2b-it:free": {
+            "name": "Google - Gemma 3n 2B (Free)",
+            "use_case": "free",
+            "provider": "google",
+            "original_id": "google/gemma-3n-e2b-it:free"
+          },
+          "google/gemini-2.5-flash": {
+            "name": "Google - Gemini 2.5 Flash",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-flash"
+          },
+          "google/gemini-2.5-pro": {
+            "name": "Google - Gemini 2.5 Pro",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-pro"
+          },
+          "google/gemini-2.5-pro-preview": {
+            "name": "Google - Gemini 2.5 Pro Preview 06-05",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-pro-preview"
+          },
+          "google/gemma-3n-e4b-it:free": {
+            "name": "Google - Gemma 3n 4B (Free)",
+            "use_case": "free",
+            "provider": "google",
+            "original_id": "google/gemma-3n-e4b-it:free"
+          },
+          "google/gemma-3n-e4b-it": {
+            "name": "Google - Gemma 3n 4B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-3n-e4b-it"
+          },
+          "google/gemini-2.5-pro-preview-05-06": {
+            "name": "Google - Gemini 2.5 Pro Preview 05-06",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.5-pro-preview-05-06"
+          },
+          "google/gemma-3-4b-it:free": {
+            "name": "Google - Gemma 3 4B (Free)",
+            "use_case": "free",
+            "provider": "google",
+            "original_id": "google/gemma-3-4b-it:free"
+          },
+          "google/gemma-3-4b-it": {
+            "name": "Google - Gemma 3 4B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-3-4b-it"
+          },
+          "google/gemma-3-12b-it:free": {
+            "name": "Google - Gemma 3 12B (Free)",
+            "use_case": "free",
+            "provider": "google",
+            "original_id": "google/gemma-3-12b-it:free"
+          },
+          "google/gemma-3-12b-it": {
+            "name": "Google - Gemma 3 12B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-3-12b-it"
+          },
+          "google/gemma-3-27b-it:free": {
+            "name": "Google - Gemma 3 27B (Free)",
+            "use_case": "free",
+            "provider": "google",
+            "original_id": "google/gemma-3-27b-it:free"
+          },
+          "google/gemma-3-27b-it": {
+            "name": "Google - Gemma 3 27B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-3-27b-it"
+          },
+          "google/gemini-2.0-flash-lite-001": {
+            "name": "Google - Gemini 2.0 Flash Lite",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.0-flash-lite-001"
+          },
+          "google/gemini-2.0-flash-001": {
+            "name": "Google - Gemini 2.0 Flash",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.0-flash-001"
+          },
+          "google/gemini-2.0-flash-exp:free": {
+            "name": "Google - Gemini 2.0 Flash Experimental (Free)",
+            "use_case": "fast",
+            "provider": "google",
+            "original_id": "google/gemini-2.0-flash-exp:free"
+          },
+          "google/gemma-2-27b-it": {
+            "name": "Google - Gemma 2 27B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-2-27b-it"
+          },
+          "google/gemma-2-9b-it": {
+            "name": "Google - Gemma 2 9B",
+            "use_case": "general",
+            "provider": "google",
+            "original_id": "google/gemma-2-9b-it"
+          }
+        }
+      },
+      "meta": {
+        "name": "Meta",
+        "description": "Meta Llama models and variants",
+        "models": {
+          "deepcogito/cogito-v2-preview-llama-405b": {
+            "name": "Deep Cogito - Cogito V2 Preview Llama 405B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "deepcogito/cogito-v2-preview-llama-405b"
+          },
+          "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
+            "name": "NVIDIA - Llama 3.3 Nemotron Super 49B V1.5",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "nvidia/llama-3.3-nemotron-super-49b-v1.5"
+          },
+          "deepcogito/cogito-v2-preview-llama-70b": {
+            "name": "Deep Cogito - Cogito V2 Preview Llama 70B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "deepcogito/cogito-v2-preview-llama-70b"
+          },
+          "deepcogito/cogito-v2-preview-llama-109b-moe": {
+            "name": "Cogito V2 Preview Llama 109B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "deepcogito/cogito-v2-preview-llama-109b-moe"
+          },
+          "meta-llama/llama-guard-4-12b": {
+            "name": "Meta - Llama Guard 4 12B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-guard-4-12b"
+          },
+          "alfredpros/codellama-7b-instruct-solidity": {
+            "name": "AlfredPros - CodeLLaMa 7B Instruct Solidity",
+            "use_case": "coding",
+            "provider": "meta",
+            "original_id": "alfredpros/codellama-7b-instruct-solidity"
+          },
+          "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
+            "name": "NVIDIA - Llama 3.1 Nemotron Ultra 253B v1",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "nvidia/llama-3.1-nemotron-ultra-253b-v1"
+          },
+          "meta-llama/llama-4-maverick": {
+            "name": "Meta - Llama 4 Maverick",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-4-maverick"
+          },
+          "meta-llama/llama-4-scout": {
+            "name": "Meta - Llama 4 Scout",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-4-scout"
+          },
+          "meta-llama/llama-guard-3-8b": {
+            "name": "Llama Guard 3 8B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-guard-3-8b"
+          },
+          "aion-labs/aion-rp-llama-3.1-8b": {
+            "name": "AionLabs - Aion-RP 1.0 (8B)",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "aion-labs/aion-rp-llama-3.1-8b"
+          },
+          "deepseek/deepseek-r1-distill-llama-70b": {
+            "name": "DeepSeek - R1 Distill Llama 70B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "deepseek/deepseek-r1-distill-llama-70b"
+          },
+          "meta-llama/llama-3.3-70b-instruct:free": {
+            "name": "Meta - Llama 3.3 70B Instruct (Free)",
+            "use_case": "free",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.3-70b-instruct:free"
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "name": "Meta - Llama 3.3 70B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.3-70b-instruct"
+          },
+          "nvidia/llama-3.1-nemotron-70b-instruct": {
+            "name": "NVIDIA - Llama 3.1 Nemotron 70B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "nvidia/llama-3.1-nemotron-70b-instruct"
+          },
+          "meta-llama/llama-3.2-3b-instruct:free": {
+            "name": "Meta - Llama 3.2 3B Instruct (Free)",
+            "use_case": "free",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.2-3b-instruct:free"
+          },
+          "meta-llama/llama-3.2-3b-instruct": {
+            "name": "Meta - Llama 3.2 3B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.2-3b-instruct"
+          },
+          "meta-llama/llama-3.2-1b-instruct": {
+            "name": "Meta - Llama 3.2 1B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.2-1b-instruct"
+          },
+          "meta-llama/llama-3.2-11b-vision-instruct": {
+            "name": "Meta - Llama 3.2 11B Vision Instruct",
+            "use_case": "multimodal",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.2-11b-vision-instruct"
+          },
+          "neversleep/llama-3.1-lumimaid-8b": {
+            "name": "NeverSleep - Lumimaid v0.2 8B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "neversleep/llama-3.1-lumimaid-8b"
+          },
+          "nousresearch/hermes-3-llama-3.1-70b": {
+            "name": "Nous - Hermes 3 70B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "nousresearch/hermes-3-llama-3.1-70b"
+          },
+          "nousresearch/hermes-3-llama-3.1-405b:free": {
+            "name": "Nous - Hermes 3 405B Instruct (Free)",
+            "use_case": "free",
+            "provider": "meta",
+            "original_id": "nousresearch/hermes-3-llama-3.1-405b:free"
+          },
+          "nousresearch/hermes-3-llama-3.1-405b": {
+            "name": "Nous - Hermes 3 405B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "nousresearch/hermes-3-llama-3.1-405b"
+          },
+          "meta-llama/llama-3.1-405b": {
+            "name": "Meta - Llama 3.1 405B (base)",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.1-405b"
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "name": "Meta - Llama 3.1 8B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.1-8b-instruct"
+          },
+          "meta-llama/llama-3.1-405b-instruct:free": {
+            "name": "Meta - Llama 3.1 405B Instruct (Free)",
+            "use_case": "free",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.1-405b-instruct:free"
+          },
+          "meta-llama/llama-3.1-405b-instruct": {
+            "name": "Meta - Llama 3.1 405B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.1-405b-instruct"
+          },
+          "meta-llama/llama-3.1-70b-instruct": {
+            "name": "Meta - Llama 3.1 70B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3.1-70b-instruct"
+          },
+          "nousresearch/hermes-2-pro-llama-3-8b": {
+            "name": "NousResearch - Hermes 2 Pro - Llama-3 8B",
+            "use_case": "professional",
+            "provider": "meta",
+            "original_id": "nousresearch/hermes-2-pro-llama-3-8b"
+          },
+          "meta-llama/llama-guard-2-8b": {
+            "name": "Meta - LlamaGuard 2 8B",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-guard-2-8b"
+          },
+          "meta-llama/llama-3-70b-instruct": {
+            "name": "Meta - Llama 3 70B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3-70b-instruct"
+          },
+          "meta-llama/llama-3-8b-instruct": {
+            "name": "Meta - Llama 3 8B Instruct",
+            "use_case": "general",
+            "provider": "meta",
+            "original_id": "meta-llama/llama-3-8b-instruct"
+          }
+        }
+      },
+      "chinese": {
+        "name": "Chinese Models",
+        "description": "Chinese AI models including Qwen, DeepSeek, etc.",
+        "models": {
+          "moonshotai/kimi-k2.5": {
+            "name": "MoonshotAI - Kimi K2.5",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2.5"
+          },
+          "z-ai/glm-4.7-flash": {
+            "name": "Z.AI - GLM 4.7 Flash",
+            "use_case": "fast",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.7-flash"
+          },
+          "z-ai/glm-4.7": {
+            "name": "Z.AI - GLM 4.7",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.7"
+          },
+          "z-ai/glm-4.6v": {
+            "name": "Z.AI - GLM 4.6V",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.6v"
+          },
+          "nex-agi/deepseek-v3.1-nex-n1": {
+            "name": "Nex AGI - DeepSeek V3.1 Nex N1",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "nex-agi/deepseek-v3.1-nex-n1"
+          },
+          "deepseek/deepseek-v3.2-speciale": {
+            "name": "DeepSeek - DeepSeek V3.2 Speciale",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-v3.2-speciale"
+          },
+          "deepseek/deepseek-v3.2": {
+            "name": "DeepSeek - DeepSeek V3.2",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-v3.2"
+          },
+          "moonshotai/kimi-k2-thinking": {
+            "name": "MoonshotAI - Kimi K2 Thinking",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2-thinking"
+          },
+          "qwen/qwen3-vl-32b-instruct": {
+            "name": "Qwen - Qwen3 VL 32B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-32b-instruct"
+          },
+          "qwen/qwen3-vl-8b-thinking": {
+            "name": "Qwen - Qwen3 VL 8B Thinking",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-8b-thinking"
+          },
+          "qwen/qwen3-vl-8b-instruct": {
+            "name": "Qwen - Qwen3 VL 8B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-8b-instruct"
+          },
+          "qwen/qwen3-vl-30b-a3b-thinking": {
+            "name": "Qwen - Qwen3 VL 30B A3B Thinking",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-30b-a3b-thinking"
+          },
+          "qwen/qwen3-vl-30b-a3b-instruct": {
+            "name": "Qwen - Qwen3 VL 30B A3B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-30b-a3b-instruct"
+          },
+          "z-ai/glm-4.6": {
+            "name": "Z.AI - GLM 4.6",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.6"
+          },
+          "z-ai/glm-4.6:exacto": {
+            "name": "Z.AI - GLM 4.6 (exacto)",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.6:exacto"
+          },
+          "deepseek/deepseek-v3.2-exp": {
+            "name": "DeepSeek - DeepSeek V3.2 Exp",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-v3.2-exp"
+          },
+          "qwen/qwen3-vl-235b-a22b-thinking": {
+            "name": "Qwen - Qwen3 VL 235B A22B Thinking",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-235b-a22b-thinking"
+          },
+          "qwen/qwen3-vl-235b-a22b-instruct": {
+            "name": "Qwen - Qwen3 VL 235B A22B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-vl-235b-a22b-instruct"
+          },
+          "qwen/qwen3-max": {
+            "name": "Qwen - Qwen3 Max",
+            "use_case": "professional",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-max"
+          },
+          "qwen/qwen3-coder-plus": {
+            "name": "Qwen - Qwen3 Coder Plus",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder-plus"
+          },
+          "deepseek/deepseek-v3.1-terminus:exacto": {
+            "name": "DeepSeek - DeepSeek V3.1 Terminus (exacto)",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-v3.1-terminus:exacto"
+          },
+          "deepseek/deepseek-v3.1-terminus": {
+            "name": "DeepSeek - DeepSeek V3.1 Terminus",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-v3.1-terminus"
+          },
+          "alibaba/tongyi-deepresearch-30b-a3b": {
+            "name": "Tongyi DeepResearch 30B A3B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "alibaba/tongyi-deepresearch-30b-a3b"
+          },
+          "qwen/qwen3-coder-flash": {
+            "name": "Qwen - Qwen3 Coder Flash",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder-flash"
+          },
+          "qwen/qwen3-next-80b-a3b-thinking": {
+            "name": "Qwen - Qwen3 Next 80B A3B Thinking",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-next-80b-a3b-thinking"
+          },
+          "qwen/qwen3-next-80b-a3b-instruct:free": {
+            "name": "Qwen - Qwen3 Next 80B A3B Instruct (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-next-80b-a3b-instruct:free"
+          },
+          "qwen/qwen3-next-80b-a3b-instruct": {
+            "name": "Qwen - Qwen3 Next 80B A3B Instruct",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-next-80b-a3b-instruct"
+          },
+          "qwen/qwen-plus-2025-07-28": {
+            "name": "Qwen - Qwen Plus 0728",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-plus-2025-07-28"
+          },
+          "qwen/qwen-plus-2025-07-28:thinking": {
+            "name": "Qwen - Qwen Plus 0728 (Thinking)",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-plus-2025-07-28:thinking"
+          },
+          "moonshotai/kimi-k2-0905": {
+            "name": "MoonshotAI - Kimi K2 0905",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2-0905"
+          },
+          "moonshotai/kimi-k2-0905:exacto": {
+            "name": "MoonshotAI - Kimi K2 0905 (exacto)",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2-0905:exacto"
+          },
+          "qwen/qwen3-30b-a3b-thinking-2507": {
+            "name": "Qwen - Qwen3 30B A3B Thinking 2507",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-30b-a3b-thinking-2507"
+          },
+          "deepseek/deepseek-chat-v3.1": {
+            "name": "DeepSeek - DeepSeek V3.1",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-chat-v3.1"
+          },
+          "z-ai/glm-4.5v": {
+            "name": "Z.AI - GLM 4.5V",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.5v"
+          },
+          "qwen/qwen3-coder-30b-a3b-instruct": {
+            "name": "Qwen - Qwen3 Coder 30B A3B Instruct",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder-30b-a3b-instruct"
+          },
+          "qwen/qwen3-30b-a3b-instruct-2507": {
+            "name": "Qwen - Qwen3 30B A3B Instruct 2507",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-30b-a3b-instruct-2507"
+          },
+          "z-ai/glm-4.5": {
+            "name": "Z.AI - GLM 4.5",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.5"
+          },
+          "z-ai/glm-4.5-air:free": {
+            "name": "Z.AI - GLM 4.5 Air (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.5-air:free"
+          },
+          "z-ai/glm-4.5-air": {
+            "name": "Z.AI - GLM 4.5 Air",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4.5-air"
+          },
+          "qwen/qwen3-235b-a22b-thinking-2507": {
+            "name": "Qwen - Qwen3 235B A22B Thinking 2507",
+            "use_case": "reasoning",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-235b-a22b-thinking-2507"
+          },
+          "z-ai/glm-4-32b": {
+            "name": "Z.AI - GLM 4 32B ",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "z-ai/glm-4-32b"
+          },
+          "qwen/qwen3-coder:free": {
+            "name": "Qwen - Qwen3 Coder 480B A35B (Free)",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder:free"
+          },
+          "qwen/qwen3-coder": {
+            "name": "Qwen - Qwen3 Coder 480B A35B",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder"
+          },
+          "qwen/qwen3-coder:exacto": {
+            "name": "Qwen - Qwen3 Coder 480B A35B (exacto)",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-coder:exacto"
+          },
+          "qwen/qwen3-235b-a22b-2507": {
+            "name": "Qwen - Qwen3 235B A22B Instruct 2507",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-235b-a22b-2507"
+          },
+          "moonshotai/kimi-k2:free": {
+            "name": "MoonshotAI - Kimi K2 0711 (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2:free"
+          },
+          "moonshotai/kimi-k2": {
+            "name": "MoonshotAI - Kimi K2 0711",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-k2"
+          },
+          "tngtech/deepseek-r1t2-chimera:free": {
+            "name": "TNG - DeepSeek R1T2 Chimera (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "tngtech/deepseek-r1t2-chimera:free"
+          },
+          "tngtech/deepseek-r1t2-chimera": {
+            "name": "TNG - DeepSeek R1T2 Chimera",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "tngtech/deepseek-r1t2-chimera"
+          },
+          "moonshotai/kimi-dev-72b": {
+            "name": "MoonshotAI - Kimi Dev 72B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "moonshotai/kimi-dev-72b"
+          },
+          "deepseek/deepseek-r1-0528:free": {
+            "name": "DeepSeek - R1 0528 (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-r1-0528:free"
+          },
+          "deepseek/deepseek-r1-0528": {
+            "name": "DeepSeek - R1 0528",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-r1-0528"
+          },
+          "qwen/qwen3-4b:free": {
+            "name": "Qwen - Qwen3 4B (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-4b:free"
+          },
+          "qwen/qwen3-30b-a3b": {
+            "name": "Qwen - Qwen3 30B A3B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-30b-a3b"
+          },
+          "qwen/qwen3-8b": {
+            "name": "Qwen - Qwen3 8B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-8b"
+          },
+          "qwen/qwen3-14b": {
+            "name": "Qwen - Qwen3 14B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-14b"
+          },
+          "qwen/qwen3-32b": {
+            "name": "Qwen - Qwen3 32B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-32b"
+          },
+          "qwen/qwen3-235b-a22b": {
+            "name": "Qwen - Qwen3 235B A22B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen3-235b-a22b"
+          },
+          "tngtech/deepseek-r1t-chimera:free": {
+            "name": "TNG - DeepSeek R1T Chimera (Free)",
+            "use_case": "free",
+            "provider": "chinese",
+            "original_id": "tngtech/deepseek-r1t-chimera:free"
+          },
+          "tngtech/deepseek-r1t-chimera": {
+            "name": "TNG - DeepSeek R1T Chimera",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "tngtech/deepseek-r1t-chimera"
+          },
+          "qwen/qwen2.5-coder-7b-instruct": {
+            "name": "Qwen - Qwen2.5 Coder 7B Instruct",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen2.5-coder-7b-instruct"
+          },
+          "qwen/qwen2.5-vl-32b-instruct": {
+            "name": "Qwen - Qwen2.5 VL 32B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen2.5-vl-32b-instruct"
+          },
+          "deepseek/deepseek-chat-v3-0324": {
+            "name": "DeepSeek - DeepSeek V3 0324",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-chat-v3-0324"
+          },
+          "qwen/qwq-32b": {
+            "name": "Qwen - QwQ 32B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwq-32b"
+          },
+          "qwen/qwen-vl-plus": {
+            "name": "Qwen - Qwen VL Plus",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-vl-plus"
+          },
+          "qwen/qwen-vl-max": {
+            "name": "Qwen - Qwen VL Max",
+            "use_case": "professional",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-vl-max"
+          },
+          "qwen/qwen-turbo": {
+            "name": "Qwen - Qwen-Turbo",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-turbo"
+          },
+          "qwen/qwen2.5-vl-72b-instruct": {
+            "name": "Qwen - Qwen2.5 VL 72B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen2.5-vl-72b-instruct"
+          },
+          "qwen/qwen-plus": {
+            "name": "Qwen - Qwen-Plus",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-plus"
+          },
+          "qwen/qwen-max": {
+            "name": "Qwen - Qwen-Max ",
+            "use_case": "professional",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-max"
+          },
+          "deepseek/deepseek-r1-distill-qwen-32b": {
+            "name": "DeepSeek - R1 Distill Qwen 32B",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-r1-distill-qwen-32b"
+          },
+          "deepseek/deepseek-r1": {
+            "name": "DeepSeek - R1",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-r1"
+          },
+          "deepseek/deepseek-chat": {
+            "name": "DeepSeek - DeepSeek V3",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "deepseek/deepseek-chat"
+          },
+          "qwen/qwen-2.5-coder-32b-instruct": {
+            "name": "Qwen2.5 Coder 32B Instruct",
+            "use_case": "coding",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-2.5-coder-32b-instruct"
+          },
+          "qwen/qwen-2.5-7b-instruct": {
+            "name": "Qwen - Qwen2.5 7B Instruct",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-2.5-7b-instruct"
+          },
+          "qwen/qwen-2.5-72b-instruct": {
+            "name": "Qwen2.5 72B Instruct",
+            "use_case": "general",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-2.5-72b-instruct"
+          },
+          "qwen/qwen-2.5-vl-7b-instruct:free": {
+            "name": "Qwen - Qwen2.5-VL 7B Instruct (Free)",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-2.5-vl-7b-instruct:free"
+          },
+          "qwen/qwen-2.5-vl-7b-instruct": {
+            "name": "Qwen - Qwen2.5-VL 7B Instruct",
+            "use_case": "multimodal",
+            "provider": "chinese",
+            "original_id": "qwen/qwen-2.5-vl-7b-instruct"
+          }
+        }
+      },
+      "open_source": {
+        "name": "Open Source",
+        "description": "Open source models from various providers",
+        "models": {
+          "allenai/molmo-2-8b:free": {
+            "name": "AllenAI - Molmo2 8B (Free)",
+            "use_case": "free",
+            "provider": "open_source",
+            "original_id": "allenai/molmo-2-8b:free"
+          },
+          "allenai/olmo-3.1-32b-instruct": {
+            "name": "AllenAI - Olmo 3.1 32B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-3.1-32b-instruct"
+          },
+          "mistralai/mistral-small-creative": {
+            "name": "Mistral - Mistral Small Creative",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-small-creative"
+          },
+          "allenai/olmo-3.1-32b-think": {
+            "name": "AllenAI - Olmo 3.1 32B Think",
+            "use_case": "reasoning",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-3.1-32b-think"
+          },
+          "mistralai/devstral-2512": {
+            "name": "Mistral - Devstral 2 2512",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/devstral-2512"
+          },
+          "mistralai/ministral-14b-2512": {
+            "name": "Mistral - Ministral 3 14B 2512",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/ministral-14b-2512"
+          },
+          "mistralai/ministral-8b-2512": {
+            "name": "Mistral - Ministral 3 8B 2512",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/ministral-8b-2512"
+          },
+          "mistralai/ministral-3b-2512": {
+            "name": "Mistral - Ministral 3 3B 2512",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/ministral-3b-2512"
+          },
+          "mistralai/mistral-large-2512": {
+            "name": "Mistral - Mistral Large 3 2512",
+            "use_case": "professional",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-large-2512"
+          },
+          "allenai/olmo-3-32b-think": {
+            "name": "AllenAI - Olmo 3 32B Think",
+            "use_case": "reasoning",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-3-32b-think"
+          },
+          "allenai/olmo-3-7b-instruct": {
+            "name": "AllenAI - Olmo 3 7B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-3-7b-instruct"
+          },
+          "allenai/olmo-3-7b-think": {
+            "name": "AllenAI - Olmo 3 7B Think",
+            "use_case": "reasoning",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-3-7b-think"
+          },
+          "mistralai/voxtral-small-24b-2507": {
+            "name": "Mistral - Voxtral Small 24B 2507",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/voxtral-small-24b-2507"
+          },
+          "mistralai/mistral-medium-3.1": {
+            "name": "Mistral - Mistral Medium 3.1",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-medium-3.1"
+          },
+          "mistralai/codestral-2508": {
+            "name": "Mistral - Codestral 2508",
+            "use_case": "coding",
+            "provider": "open_source",
+            "original_id": "mistralai/codestral-2508"
+          },
+          "mistralai/devstral-medium": {
+            "name": "Mistral - Devstral Medium",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/devstral-medium"
+          },
+          "mistralai/devstral-small": {
+            "name": "Mistral - Devstral Small 1.1",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/devstral-small"
+          },
+          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
+            "name": "Venice - Uncensored (Free)",
+            "use_case": "free",
+            "provider": "open_source",
+            "original_id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free"
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "name": "Mistral - Mistral Small 3.2 24B",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-small-3.2-24b-instruct"
+          },
+          "nousresearch/deephermes-3-mistral-24b-preview": {
+            "name": "Nous - DeepHermes 3 Mistral 24B Preview",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "nousresearch/deephermes-3-mistral-24b-preview"
+          },
+          "mistralai/mistral-medium-3": {
+            "name": "Mistral - Mistral Medium 3",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-medium-3"
+          },
+          "mistralai/mistral-small-3.1-24b-instruct:free": {
+            "name": "Mistral - Mistral Small 3.1 24B (Free)",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-small-3.1-24b-instruct:free"
+          },
+          "mistralai/mistral-small-3.1-24b-instruct": {
+            "name": "Mistral - Mistral Small 3.1 24B",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-small-3.1-24b-instruct"
+          },
+          "allenai/olmo-2-0325-32b-instruct": {
+            "name": "AllenAI - Olmo 2 32B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "allenai/olmo-2-0325-32b-instruct"
+          },
+          "mistralai/mistral-saba": {
+            "name": "Mistral - Saba",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-saba"
+          },
+          "mistralai/mistral-small-24b-instruct-2501": {
+            "name": "Mistral - Mistral Small 3",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-small-24b-instruct-2501"
+          },
+          "microsoft/phi-4": {
+            "name": "Microsoft - Phi 4",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "microsoft/phi-4"
+          },
+          "mistralai/mistral-large-2411": {
+            "name": "Mistral Large 2411",
+            "use_case": "professional",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-large-2411"
+          },
+          "mistralai/mistral-large-2407": {
+            "name": "Mistral Large 2407",
+            "use_case": "professional",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-large-2407"
+          },
+          "mistralai/pixtral-large-2411": {
+            "name": "Mistral - Pixtral Large 2411",
+            "use_case": "professional",
+            "provider": "open_source",
+            "original_id": "mistralai/pixtral-large-2411"
+          },
+          "mistralai/ministral-8b": {
+            "name": "Mistral - Ministral 8B",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/ministral-8b"
+          },
+          "mistralai/ministral-3b": {
+            "name": "Mistral - Ministral 3B",
+            "use_case": "fast",
+            "provider": "open_source",
+            "original_id": "mistralai/ministral-3b"
+          },
+          "mistralai/pixtral-12b": {
+            "name": "Mistral - Pixtral 12B",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/pixtral-12b"
+          },
+          "mistralai/mistral-nemo": {
+            "name": "Mistral - Mistral Nemo",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-nemo"
+          },
+          "mistralai/mistral-7b-instruct": {
+            "name": "Mistral - Mistral 7B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-7b-instruct"
+          },
+          "mistralai/mistral-7b-instruct-v0.3": {
+            "name": "Mistral - Mistral 7B Instruct v0.3",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-7b-instruct-v0.3"
+          },
+          "mistralai/mixtral-8x22b-instruct": {
+            "name": "Mistral - Mixtral 8x22B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mixtral-8x22b-instruct"
+          },
+          "microsoft/wizardlm-2-8x22b": {
+            "name": "WizardLM-2 8x22B",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "microsoft/wizardlm-2-8x22b"
+          },
+          "mistralai/mistral-large": {
+            "name": "Mistral Large",
+            "use_case": "professional",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-large"
+          },
+          "mistralai/mistral-tiny": {
+            "name": "Mistral Tiny",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-tiny"
+          },
+          "mistralai/mistral-7b-instruct-v0.2": {
+            "name": "Mistral - Mistral 7B Instruct v0.2",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-7b-instruct-v0.2"
+          },
+          "mistralai/mixtral-8x7b-instruct": {
+            "name": "Mistral - Mixtral 8x7B Instruct",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mixtral-8x7b-instruct"
+          },
+          "mistralai/mistral-7b-instruct-v0.1": {
+            "name": "Mistral - Mistral 7B Instruct v0.1",
+            "use_case": "general",
+            "provider": "open_source",
+            "original_id": "mistralai/mistral-7b-instruct-v0.1"
+          }
+        }
+      },
+      "other": {
+        "name": "Other Providers",
+        "description": "Models from other specialized providers",
+        "models": {
+          "arcee-ai/trinity-large-preview:free": {
+            "name": "Arcee AI - Trinity Large Preview (Free)",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "arcee-ai/trinity-large-preview:free"
+          },
+          "upstage/solar-pro-3:free": {
+            "name": "Upstage - Solar Pro 3 (Free)",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "upstage/solar-pro-3:free"
+          },
+          "minimax/minimax-m2-her": {
+            "name": "MiniMax - MiniMax M2-her",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "minimax/minimax-m2-her"
+          },
+          "writer/palmyra-x5": {
+            "name": "Writer - Palmyra X5",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "writer/palmyra-x5"
+          },
+          "liquid/lfm-2.5-1.2b-thinking:free": {
+            "name": "LiquidAI - LFM2.5-1.2B-Thinking (Free)",
+            "use_case": "reasoning",
+            "provider": "other",
+            "original_id": "liquid/lfm-2.5-1.2b-thinking:free"
+          },
+          "liquid/lfm-2.5-1.2b-instruct:free": {
+            "name": "LiquidAI - LFM2.5-1.2B-Instruct (Free)",
+            "use_case": "free",
+            "provider": "other",
+            "original_id": "liquid/lfm-2.5-1.2b-instruct:free"
+          },
+          "bytedance-seed/seed-1.6-flash": {
+            "name": "ByteDance Seed - Seed 1.6 Flash",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "bytedance-seed/seed-1.6-flash"
+          },
+          "bytedance-seed/seed-1.6": {
+            "name": "ByteDance Seed - Seed 1.6",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "bytedance-seed/seed-1.6"
+          },
+          "minimax/minimax-m2.1": {
+            "name": "MiniMax - MiniMax M2.1",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "minimax/minimax-m2.1"
+          },
+          "xiaomi/mimo-v2-flash": {
+            "name": "Xiaomi - MiMo-V2-Flash",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "xiaomi/mimo-v2-flash"
+          },
+          "nvidia/nemotron-3-nano-30b-a3b:free": {
+            "name": "NVIDIA - Nemotron 3 Nano 30B A3B (Free)",
+            "use_case": "free",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-3-nano-30b-a3b:free"
+          },
+          "nvidia/nemotron-3-nano-30b-a3b": {
+            "name": "NVIDIA - Nemotron 3 Nano 30B A3B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-3-nano-30b-a3b"
+          },
+          "relace/relace-search": {
+            "name": "Relace - Relace Search",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "relace/relace-search"
+          },
+          "essentialai/rnj-1-instruct": {
+            "name": "EssentialAI - Rnj 1 Instruct",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "essentialai/rnj-1-instruct"
+          },
+          "openrouter/bodybuilder": {
+            "name": "Body Builder (beta)",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "openrouter/bodybuilder"
+          },
+          "amazon/nova-2-lite-v1": {
+            "name": "Amazon - Nova 2 Lite",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "amazon/nova-2-lite-v1"
+          },
+          "arcee-ai/trinity-mini:free": {
+            "name": "Arcee AI - Trinity Mini (Free)",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "arcee-ai/trinity-mini:free"
+          },
+          "arcee-ai/trinity-mini": {
+            "name": "Arcee AI - Trinity Mini",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "arcee-ai/trinity-mini"
+          },
+          "prime-intellect/intellect-3": {
+            "name": "Prime Intellect - INTELLECT-3",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "prime-intellect/intellect-3"
+          },
+          "tngtech/tng-r1t-chimera:free": {
+            "name": "TNG - R1T Chimera (Free)",
+            "use_case": "free",
+            "provider": "other",
+            "original_id": "tngtech/tng-r1t-chimera:free"
+          },
+          "tngtech/tng-r1t-chimera": {
+            "name": "TNG - R1T Chimera",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "tngtech/tng-r1t-chimera"
+          },
+          "x-ai/grok-4.1-fast": {
+            "name": "xAI - Grok 4.1 Fast",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "x-ai/grok-4.1-fast"
+          },
+          "deepcogito/cogito-v2.1-671b": {
+            "name": "Deep Cogito - Cogito v2.1 671B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "deepcogito/cogito-v2.1-671b"
+          },
+          "kwaipilot/kat-coder-pro": {
+            "name": "Kwaipilot - KAT-Coder-Pro V1",
+            "use_case": "coding",
+            "provider": "other",
+            "original_id": "kwaipilot/kat-coder-pro"
+          },
+          "amazon/nova-premier-v1": {
+            "name": "Amazon - Nova Premier 1.0",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "amazon/nova-premier-v1"
+          },
+          "perplexity/sonar-pro-search": {
+            "name": "Perplexity - Sonar Pro Search",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "perplexity/sonar-pro-search"
+          },
+          "nvidia/nemotron-nano-12b-v2-vl:free": {
+            "name": "NVIDIA - Nemotron Nano 12B 2 VL (Free)",
+            "use_case": "multimodal",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-nano-12b-v2-vl:free"
+          },
+          "nvidia/nemotron-nano-12b-v2-vl": {
+            "name": "NVIDIA - Nemotron Nano 12B 2 VL",
+            "use_case": "multimodal",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-nano-12b-v2-vl"
+          },
+          "minimax/minimax-m2": {
+            "name": "MiniMax - MiniMax M2",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "minimax/minimax-m2"
+          },
+          "liquid/lfm2-8b-a1b": {
+            "name": "LiquidAI - LFM2-8B-A1B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "liquid/lfm2-8b-a1b"
+          },
+          "liquid/lfm-2.2-6b": {
+            "name": "LiquidAI - LFM2-2.6B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "liquid/lfm-2.2-6b"
+          },
+          "ibm-granite/granite-4.0-h-micro": {
+            "name": "IBM - Granite 4.0 Micro",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "ibm-granite/granite-4.0-h-micro"
+          },
+          "baidu/ernie-4.5-21b-a3b-thinking": {
+            "name": "Baidu - ERNIE 4.5 21B A3B Thinking",
+            "use_case": "reasoning",
+            "provider": "other",
+            "original_id": "baidu/ernie-4.5-21b-a3b-thinking"
+          },
+          "thedrummer/cydonia-24b-v4.1": {
+            "name": "TheDrummer - Cydonia 24B V4.1",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "thedrummer/cydonia-24b-v4.1"
+          },
+          "relace/relace-apply-3": {
+            "name": "Relace - Relace Apply 3",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "relace/relace-apply-3"
+          },
+          "x-ai/grok-4-fast": {
+            "name": "xAI - Grok 4 Fast",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "x-ai/grok-4-fast"
+          },
+          "opengvlab/internvl3-78b": {
+            "name": "OpenGVLab - InternVL3 78B",
+            "use_case": "multimodal",
+            "provider": "other",
+            "original_id": "opengvlab/internvl3-78b"
+          },
+          "meituan/longcat-flash-chat": {
+            "name": "Meituan - LongCat Flash Chat",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "meituan/longcat-flash-chat"
+          },
+          "nvidia/nemotron-nano-9b-v2:free": {
+            "name": "NVIDIA - Nemotron Nano 9B V2 (Free)",
+            "use_case": "free",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-nano-9b-v2:free"
+          },
+          "nvidia/nemotron-nano-9b-v2": {
+            "name": "NVIDIA - Nemotron Nano 9B V2",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "nvidia/nemotron-nano-9b-v2"
+          },
+          "stepfun-ai/step3": {
+            "name": "StepFun - Step3",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "stepfun-ai/step3"
+          },
+          "x-ai/grok-code-fast-1": {
+            "name": "xAI - Grok Code Fast 1",
+            "use_case": "coding",
+            "provider": "other",
+            "original_id": "x-ai/grok-code-fast-1"
+          },
+          "nousresearch/hermes-4-70b": {
+            "name": "Nous - Hermes 4 70B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "nousresearch/hermes-4-70b"
+          },
+          "nousresearch/hermes-4-405b": {
+            "name": "Nous - Hermes 4 405B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "nousresearch/hermes-4-405b"
+          },
+          "baidu/ernie-4.5-21b-a3b": {
+            "name": "Baidu - ERNIE 4.5 21B A3B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "baidu/ernie-4.5-21b-a3b"
+          },
+          "baidu/ernie-4.5-vl-28b-a3b": {
+            "name": "Baidu - ERNIE 4.5 VL 28B A3B",
+            "use_case": "multimodal",
+            "provider": "other",
+            "original_id": "baidu/ernie-4.5-vl-28b-a3b"
+          },
+          "ai21/jamba-mini-1.7": {
+            "name": "AI21 - Jamba Mini 1.7",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "ai21/jamba-mini-1.7"
+          },
+          "ai21/jamba-large-1.7": {
+            "name": "AI21 - Jamba Large 1.7",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "ai21/jamba-large-1.7"
+          },
+          "bytedance/ui-tars-1.5-7b": {
+            "name": "ByteDance - UI-TARS 7B ",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "bytedance/ui-tars-1.5-7b"
+          },
+          "switchpoint/router": {
+            "name": "Switchpoint Router",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "switchpoint/router"
+          },
+          "x-ai/grok-4": {
+            "name": "xAI - Grok 4",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "x-ai/grok-4"
+          },
+          "tencent/hunyuan-a13b-instruct": {
+            "name": "Tencent - Hunyuan A13B Instruct",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "tencent/hunyuan-a13b-instruct"
+          },
+          "morph/morph-v3-large": {
+            "name": "Morph - Morph V3 Large",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "morph/morph-v3-large"
+          },
+          "morph/morph-v3-fast": {
+            "name": "Morph - Morph V3 Fast",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "morph/morph-v3-fast"
+          },
+          "baidu/ernie-4.5-vl-424b-a47b": {
+            "name": "Baidu - ERNIE 4.5 VL 424B A47B ",
+            "use_case": "multimodal",
+            "provider": "other",
+            "original_id": "baidu/ernie-4.5-vl-424b-a47b"
+          },
+          "baidu/ernie-4.5-300b-a47b": {
+            "name": "Baidu - ERNIE 4.5 300B A47B ",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "baidu/ernie-4.5-300b-a47b"
+          },
+          "inception/mercury": {
+            "name": "Inception - Mercury",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "inception/mercury"
+          },
+          "minimax/minimax-m1": {
+            "name": "MiniMax - MiniMax M1",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "minimax/minimax-m1"
+          },
+          "x-ai/grok-3-mini": {
+            "name": "xAI - Grok 3 Mini",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "x-ai/grok-3-mini"
+          },
+          "x-ai/grok-3": {
+            "name": "xAI - Grok 3",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "x-ai/grok-3"
+          },
+          "arcee-ai/spotlight": {
+            "name": "Arcee AI - Spotlight",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "arcee-ai/spotlight"
+          },
+          "arcee-ai/maestro-reasoning": {
+            "name": "Arcee AI - Maestro Reasoning",
+            "use_case": "reasoning",
+            "provider": "other",
+            "original_id": "arcee-ai/maestro-reasoning"
+          },
+          "arcee-ai/virtuoso-large": {
+            "name": "Arcee AI - Virtuoso Large",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "arcee-ai/virtuoso-large"
+          },
+          "arcee-ai/coder-large": {
+            "name": "Arcee AI - Coder Large",
+            "use_case": "coding",
+            "provider": "other",
+            "original_id": "arcee-ai/coder-large"
+          },
+          "inception/mercury-coder": {
+            "name": "Inception - Mercury Coder",
+            "use_case": "coding",
+            "provider": "other",
+            "original_id": "inception/mercury-coder"
+          },
+          "eleutherai/llemma_7b": {
+            "name": "EleutherAI - Llemma 7b",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "eleutherai/llemma_7b"
+          },
+          "x-ai/grok-3-mini-beta": {
+            "name": "xAI - Grok 3 Mini Beta",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "x-ai/grok-3-mini-beta"
+          },
+          "x-ai/grok-3-beta": {
+            "name": "xAI - Grok 3 Beta",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "x-ai/grok-3-beta"
+          },
+          "cohere/command-a": {
+            "name": "Cohere - Command A",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "cohere/command-a"
+          },
+          "thedrummer/skyfall-36b-v2": {
+            "name": "TheDrummer - Skyfall 36B V2",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "thedrummer/skyfall-36b-v2"
+          },
+          "perplexity/sonar-reasoning-pro": {
+            "name": "Perplexity - Sonar Reasoning Pro",
+            "use_case": "reasoning",
+            "provider": "other",
+            "original_id": "perplexity/sonar-reasoning-pro"
+          },
+          "perplexity/sonar-pro": {
+            "name": "Perplexity - Sonar Pro",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "perplexity/sonar-pro"
+          },
+          "perplexity/sonar-deep-research": {
+            "name": "Perplexity - Sonar Deep Research",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "perplexity/sonar-deep-research"
+          },
+          "aion-labs/aion-1.0": {
+            "name": "AionLabs - Aion-1.0",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "aion-labs/aion-1.0"
+          },
+          "aion-labs/aion-1.0-mini": {
+            "name": "AionLabs - Aion-1.0-Mini",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "aion-labs/aion-1.0-mini"
+          },
+          "perplexity/sonar": {
+            "name": "Perplexity - Sonar",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "perplexity/sonar"
+          },
+          "minimax/minimax-01": {
+            "name": "MiniMax - MiniMax-01",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "minimax/minimax-01"
+          },
+          "sao10k/l3.1-70b-hanami-x1": {
+            "name": "Sao10K - Llama 3.1 70B Hanami x1",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "sao10k/l3.1-70b-hanami-x1"
+          },
+          "sao10k/l3.3-euryale-70b": {
+            "name": "Sao10K - Llama 3.3 Euryale 70B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "sao10k/l3.3-euryale-70b"
+          },
+          "cohere/command-r7b-12-2024": {
+            "name": "Cohere - Command R7B (12-2024)",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "cohere/command-r7b-12-2024"
+          },
+          "amazon/nova-lite-v1": {
+            "name": "Amazon - Nova Lite 1.0",
+            "use_case": "fast",
+            "provider": "other",
+            "original_id": "amazon/nova-lite-v1"
+          },
+          "amazon/nova-micro-v1": {
+            "name": "Amazon - Nova Micro 1.0",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "amazon/nova-micro-v1"
+          },
+          "amazon/nova-pro-v1": {
+            "name": "Amazon - Nova Pro 1.0",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "amazon/nova-pro-v1"
+          },
+          "raifle/sorcererlm-8x22b": {
+            "name": "SorcererLM 8x22B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "raifle/sorcererlm-8x22b"
+          },
+          "thedrummer/unslopnemo-12b": {
+            "name": "TheDrummer - UnslopNemo 12B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "thedrummer/unslopnemo-12b"
+          },
+          "anthracite-org/magnum-v4-72b": {
+            "name": "Magnum v4 72B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "anthracite-org/magnum-v4-72b"
+          },
+          "inflection/inflection-3-pi": {
+            "name": "Inflection - Inflection 3 Pi",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "inflection/inflection-3-pi"
+          },
+          "inflection/inflection-3-productivity": {
+            "name": "Inflection - Inflection 3 Productivity",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "inflection/inflection-3-productivity"
+          },
+          "thedrummer/rocinante-12b": {
+            "name": "TheDrummer - Rocinante 12B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "thedrummer/rocinante-12b"
+          },
+          "cohere/command-r-08-2024": {
+            "name": "Cohere - Command R (08-2024)",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "cohere/command-r-08-2024"
+          },
+          "cohere/command-r-plus-08-2024": {
+            "name": "Cohere - Command R+ (08-2024)",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "cohere/command-r-plus-08-2024"
+          },
+          "sao10k/l3.1-euryale-70b": {
+            "name": "Sao10K - Llama 3.1 Euryale 70B v2.2",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "sao10k/l3.1-euryale-70b"
+          },
+          "sao10k/l3-lunaris-8b": {
+            "name": "Sao10K - Llama 3 8B Lunaris",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "sao10k/l3-lunaris-8b"
+          },
+          "sao10k/l3-euryale-70b": {
+            "name": "Sao10k - Llama 3 Euryale 70B v2.1",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "sao10k/l3-euryale-70b"
+          },
+          "neversleep/noromaid-20b": {
+            "name": "Noromaid 20B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "neversleep/noromaid-20b"
+          },
+          "alpindale/goliath-120b": {
+            "name": "Goliath 120B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "alpindale/goliath-120b"
+          },
+          "openrouter/auto": {
+            "name": "Auto Router",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "openrouter/auto"
+          },
+          "mancer/weaver": {
+            "name": "Mancer - Weaver (alpha)",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "mancer/weaver"
+          },
+          "undi95/remm-slerp-l2-13b": {
+            "name": "ReMM SLERP 13B",
+            "use_case": "general",
+            "provider": "other",
+            "original_id": "undi95/remm-slerp-l2-13b"
+          },
+          "gryphe/mythomax-l2-13b": {
+            "name": "MythoMax 13B",
+            "use_case": "professional",
+            "provider": "other",
+            "original_id": "gryphe/mythomax-l2-13b"
+          }
+        }
+      }
+    }
+  }
+}
