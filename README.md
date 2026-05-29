@@ -66,3 +66,38 @@ Because of the Directory Junction link:
      cd C:\AGY-Projects\openCode
      git pull origin main
      ```
+
+---
+
+## Configuring a New Project
+
+To configure any project workspace (e.g. `C:\AGY-Projects\my-new-project`) to use your OpenCode setup and load project-specific rules, you only need to create a lightweight config file in the project root.
+
+### Step 1: Create `opencode.json`
+Create a file named `opencode.json` in the root of your project directory.
+
+### Step 2: Add Config Template
+Paste the following template inside the project's `opencode.json`:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "AGENTS.md",
+    ".agent/gemini.md",
+    ".agent/rules/constitution.md",
+    ".agent/rules/code-standards.md"
+  ],
+  "skills": {
+    "paths": [".agent/skills"]
+  }
+}
+```
+
+### Explaining the Fields
+- **`instructions`**: List of markdown rules or context files inside your project. OpenCode will automatically parse and load these files into the context window for all agents. Add or remove paths here to fit your project guidelines.
+- **`skills.paths`**: Directory paths (relative to the project root) containing any custom, project-specific typescript or python tools/skills.
+
+> [!NOTE]
+> You **do not** need to create a `.opencode` folder inside your project. All slash commands and subagents are resolved globally from your linked `[openCode](file:///c:/AGY-Projects/openCode)` folder.
+
