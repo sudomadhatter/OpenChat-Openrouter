@@ -103,14 +103,34 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1
 
 ---
 
-### Step 6: Launch OpenCode
+### Step 6: Connect OpenRouter (First Launch Only)
 
-Open any terminal inside a project folder and run:
+The `.env` file is a reference for your key, but OpenCode stores authentication in its own internal auth system. You must register OpenRouter once per machine:
+
+1. Open a terminal inside any project folder and launch OpenCode:
+   ```powershell
+   opencode
+   ```
+2. Inside the TUI, type:
+   ```
+   /connect
+   ```
+3. Select **OpenRouter** from the provider list.
+4. Paste your OpenRouter API key when prompted (starts with `sk-or-v1-...`).
+5. Type `/models` to verify — you should see all available OpenRouter models (Claude, GPT, GLM, DeepSeek, etc.).
+
+This only needs to be done **once per machine**. The key is saved permanently in OpenCode's auth store.
+
+---
+
+### Step 7: Launch OpenCode (Normal Use)
+
+From any project folder:
 ```powershell
 opencode
 ```
 
-The interactive TUI will launch directly in the terminal. All your custom subagents and slash commands will be loaded automatically.
+The interactive TUI launches directly in the terminal. All your custom subagents and slash commands are loaded automatically from the linked config.
 
 ---
 

@@ -1,37 +1,27 @@
-# Simple Step-by-Step Guide: Connect OpenRouter
+# Quick Setup: Connect Your OpenRouter API Key
 
-We will use a "Magic Command" to fix the key issue. This is safer than pasting inside the app.
-
-## Step 1: Open Terminal
-You clearly have one open, but if not, open PowerShell.
-
-## Step 2: Copy the Magic Command
-Copy the line below, but **STOP**. Do not hit enter yet.
-
-```powershell
-$env:OPENROUTER_API_KEY="PASTE_YOUR_KEY_HERE"
-```
-
-## Step 3: Paste and Edit
-1.  Paste that line into your terminal.
-2.  Delete the text `PASTE_YOUR_KEY_HERE`.
-3.  Paste your actual key (it starts with `sk-or-v1-...`) inside the quotes `""`.
-    -   It should look like: `$env:OPENROUTER_API_KEY="sk-or-v1-abc12345..."`
-4.  **Press Enter**.
-
-## Step 4: Launch OpenCode
-Now, in the *same* terminal window, type:
-
+## Step 1: Launch OpenCode
 ```powershell
 opencode
 ```
-**Press Enter.**
 
-## Step 5: Verify
-Once OpenCode loads:
-1.  Type `/model` and press Enter.
-2.  Type `claude` (or any model you want).
-3.  If you see models, **it worked!**
+## Step 2: Connect OpenRouter
+Inside the TUI, type:
+```
+/connect
+```
+- Select **OpenRouter** from the list.
+- Paste your API key (starts with `sk-or-v1-...`).
+
+## Step 3: Pick a Model
+```
+/models
+```
+Search for any model (e.g. `claude`, `glm`, `gpt`, `deepseek`) and select it.
+
+## Done!
+Your key is saved permanently on this machine. You won't need to do this again unless you reinstall OpenCode.
 
 ---
-*Note: This "Magic Command" only lasts while this terminal window is open. If you close it, you might need to do this again. To make it permanent, search Windows for "Edit the system environment variables".*
+
+> **Where is the key stored?** OpenCode saves it in its internal auth file, not in the `.env`. The `.env` in this repo is just a backup reference for your records.

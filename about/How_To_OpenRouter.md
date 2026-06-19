@@ -1,23 +1,35 @@
-# How to Switch to OpenRouter in OpenCode
+# How to Connect OpenRouter in OpenCode
 
-Since you want to use OpenRouter exclusively, follow these steps to connect and select your model.
+OpenCode uses its own internal auth store for API keys. The `.env` file in this repo is just a reference — you must register your key inside OpenCode once per machine.
 
-## 1. Connect OpenRouter
-1.  Open your terminal and run `opencode`.
-2.  Once the interface loads, type `/connect` and press **Enter**.
-3.  Use the arrow keys to select **OpenRouter** from the list.
-4.  Paste your **OpenRouter API Key** when prompted and press **Enter**.
+## 1. Launch OpenCode
 
-## 2. Select Your Model
-1.  Type `/model` (or `/models`) and press **Enter**.
-2.  In the search bar that appears, type the name of the model you want (e.g., `claude`, `gpt-4`, `deepseek`).
-    -   *Example*: Type `anthropic/claude-3.5-sonnet`
-3.  Select the model from the list and press **Enter**.
+Open a terminal in any project folder and run:
+```powershell
+opencode
+```
 
-## 3. Verify
-You should see the selected model name (e.g., `Claude 3.5 Sonnet`) displayed in the bottom status bar or top header. All your chats will now use this model.
+## 2. Connect OpenRouter
+
+Inside the OpenCode TUI:
+1. Type `/connect` and press **Enter**.
+2. Use the arrow keys to select **OpenRouter** from the provider list.
+3. Paste your **OpenRouter API key** (starts with `sk-or-v1-...`) and press **Enter**.
+
+> Your key is saved permanently in OpenCode's auth store (`~/.local/share/opencode/auth.json` on Linux/Mac, or the equivalent on Windows). You only need to do this once per machine.
+
+## 3. Select Your Model
+
+1. Type `/models` and press **Enter**.
+2. Search for the model you want (e.g. `claude`, `glm`, `deepseek`, `gpt`).
+3. Select it and press **Enter**.
+
+The selected model name will appear in the status bar. All your chats will now use this model via OpenRouter.
 
 ## 4. Troubleshooting
-If you don't see the models:
-- Ensure your API key is correct.
-- Try running `/refresh` if available to reload model lists.
+
+| Problem | Fix |
+|---|---|
+| No models appear after `/connect` | Double-check your API key at [openrouter.ai/keys](https://openrouter.ai/keys) |
+| Key not saved between sessions | Re-run `/connect` — the first attempt may have failed silently |
+| Want to switch models mid-session | Type `/models` at any time to change |
