@@ -1,5 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "openrouter": {
+      "options": {
+        "apiKey": "{env:OPENROUTER_API_KEY}"
+      }
+    }
+  },
   "default_agent": "plan",
   "instructions": [
     "AGENTS.md",

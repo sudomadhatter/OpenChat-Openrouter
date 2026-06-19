@@ -1,35 +1,55 @@
 # How to Connect OpenRouter in OpenCode
 
-OpenCode uses its own internal auth store for API keys. The `.env` file in this repo is just a reference — you must register your key inside OpenCode once per machine.
+OpenCode uses the `OPENROUTER_API_KEY` environment variable to authenticate with OpenRouter. This is configured in the global `opencode.json` via the `provider` block.
 
-## 1. Launch OpenCode
+## First-Time Setup (Once Per Machine)
 
-Open a terminal in any project folder and run:
+### Step 1: Set Your API Key as a Permanent Environment Variable
+
+Open PowerShell and run the following command, replacing the key with your own:
+
+```powershell
+[System.Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "sk-or-v1-YOUR_KEY_HERE", "User")
+```
+
+Get your key from [openrouter.ai/keys](https://openrouter.ai/keys).
+
+> **Important:** Each machine can have a different API key. The key is stored in Windows environment variables — not in any file that gets pushed to git.
+
+### Step 2: Restart Your Terminal
+
+Close and reopen your terminal so the new environment variable is picked up.
+
+### Step 3: Launch OpenCode
+
 ```powershell
 opencode
 ```
 
-## 2. Connect OpenRouter
+### Step 4: Select Your Model
 
-Inside the OpenCode TUI:
-1. Type `/connect` and press **Enter**.
-2. Use the arrow keys to select **OpenRouter** from the provider list.
-3. Paste your **OpenRouter API key** (starts with `sk-or-v1-...`) and press **Enter**.
+Inside the TUI, type `/models` and search for the model you want (e.g. `glm`, `claude`, `gpt`, `deepseek`). Select it and start coding.
 
-> Your key is saved permanently in OpenCode's auth store (`~/.local/share/opencode/auth.json` on Linux/Mac, or the equivalent on Windows). You only need to do this once per machine.
+## How It Works
 
-## 3. Select Your Model
+The `opencode.json` in this config repo contains:
+```json
+"provider": {
+  "openrouter": {
+    "options": {
+      "apiKey": "{env:OPENROUTER_API_KEY}"
+    }
+  }
+}
+```
 
-1. Type `/models` and press **Enter**.
-2. Search for the model you want (e.g. `claude`, `glm`, `deepseek`, `gpt`).
-3. Select it and press **Enter**.
+This tells OpenCode to read the API key from the `OPENROUTER_API_KEY` environment variable. The JSON file is identical on every machine — only the env var value differs.
 
-The selected model name will appear in the status bar. All your chats will now use this model via OpenRouter.
-
-## 4. Troubleshooting
+## Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| No models appear after `/connect` | Double-check your API key at [openrouter.ai/keys](https://openrouter.ai/keys) |
-| Key not saved between sessions | Re-run `/connect` — the first attempt may have failed silently |
-| Want to switch models mid-session | Type `/models` at any time to change |
+| No models appear | Check that `OPENROUTER_API_KEY` is set: `echo $env:OPENROUTER_API_KEY` |
+| Key not persisting | You must use `[System.Environment]::SetEnvironmentVariable(...)` with `"User"` scope, not just `$env:` |
+| Want to switch models | Type `/models` at any time inside the TUI |
+| Wrong key on this machine | Re-run the `SetEnvironmentVariable` command with the correct key |

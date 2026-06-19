@@ -1,27 +1,21 @@
 # Quick Setup: Connect Your OpenRouter API Key
 
-## Step 1: Launch OpenCode
+## Step 1: Set the Environment Variable
+```powershell
+[System.Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "sk-or-v1-YOUR_KEY_HERE", "User")
+```
+Replace `sk-or-v1-YOUR_KEY_HERE` with your actual key from [openrouter.ai/keys](https://openrouter.ai/keys).
+
+## Step 2: Restart Your Terminal
+Close and reopen your terminal window.
+
+## Step 3: Launch OpenCode
 ```powershell
 opencode
 ```
 
-## Step 2: Connect OpenRouter
-Inside the TUI, type:
-```
-/connect
-```
-- Select **OpenRouter** from the list.
-- Paste your API key (starts with `sk-or-v1-...`).
-
-## Step 3: Pick a Model
-```
-/models
-```
-Search for any model (e.g. `claude`, `glm`, `gpt`, `deepseek`) and select it.
+## Step 4: Pick a Model
+Inside the TUI, type `/models`, search for your model, and select it.
 
 ## Done!
-Your key is saved permanently on this machine. You won't need to do this again unless you reinstall OpenCode.
-
----
-
-> **Where is the key stored?** OpenCode saves it in its internal auth file, not in the `.env`. The `.env` in this repo is just a backup reference for your records.
+Your key is stored as a permanent Windows environment variable. It persists across all terminal sessions and reboots. Each machine uses its own key — the config files stay the same everywhere.

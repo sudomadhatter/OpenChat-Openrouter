@@ -73,18 +73,17 @@ git clone https://github.com/sudomadhatter/OpenChat-Openrouter.git OpenCode
 
 ---
 
-### Step 4: Add Your OpenRouter API Key
+### Step 4: Set Your OpenRouter API Key (Per Machine)
 
-Each machine needs its own `.env` file with a valid API key. This file is git-ignored and must be created manually:
+Each machine needs its own API key stored as a **permanent Windows environment variable**:
 
 ```powershell
-cd OpenCode
-echo OPENROUTER_API_KEY=sk-or-v1-YOUR_KEY_HERE > .env
+[System.Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "sk-or-v1-YOUR_KEY_HERE", "User")
 ```
 
-Replace `sk-or-v1-YOUR_KEY_HERE` with your actual OpenRouter API key from [openrouter.ai/keys](https://openrouter.ai/keys).
+Replace `sk-or-v1-YOUR_KEY_HERE` with your actual key from [openrouter.ai/keys](https://openrouter.ai/keys).
 
-> **Note:** Each machine may use a different API key. The `.env` file is local-only and should never be committed to git.
+> **Why an environment variable?** The `opencode.json` config references the key via `{env:OPENROUTER_API_KEY}`. This means the config file is identical on every machine — only the env var differs. No secrets in git.
 
 ---
 
@@ -103,34 +102,14 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1
 
 ---
 
-### Step 6: Connect OpenRouter (First Launch Only)
+### Step 6: Launch OpenCode
 
-The `.env` file is a reference for your key, but OpenCode stores authentication in its own internal auth system. You must register OpenRouter once per machine:
-
-1. Open a terminal inside any project folder and launch OpenCode:
-   ```powershell
-   opencode
-   ```
-2. Inside the TUI, type:
-   ```
-   /connect
-   ```
-3. Select **OpenRouter** from the provider list.
-4. Paste your OpenRouter API key when prompted (starts with `sk-or-v1-...`).
-5. Type `/models` to verify — you should see all available OpenRouter models (Claude, GPT, GLM, DeepSeek, etc.).
-
-This only needs to be done **once per machine**. The key is saved permanently in OpenCode's auth store.
-
----
-
-### Step 7: Launch OpenCode (Normal Use)
-
-From any project folder:
+**Close and reopen your terminal** (so the env var is picked up), then from any project folder:
 ```powershell
 opencode
 ```
 
-The interactive TUI launches directly in the terminal. All your custom subagents and slash commands are loaded automatically from the linked config.
+The interactive TUI launches directly in the terminal. Type `/models` to select your model (GLM, Claude, GPT, DeepSeek, etc.). All your custom subagents and slash commands are loaded automatically from the linked config.
 
 ---
 
