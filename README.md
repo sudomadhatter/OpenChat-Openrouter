@@ -1,74 +1,124 @@
 # OpenChat-Openrouter Config (openCode Config Repo)
 
-This repository holds your centralized OpenCode configuration, custom subagents, slash commands, model configuration lists, and plugin dependency packages. 
+This repository holds your centralized OpenCode configuration: custom subagents, slash commands, model lists, and plugin dependencies.
 
 By linking this repository to your global configuration directory, you can seamlessly sync your agents and slash commands across different computers and project workspaces.
+
+> **Important:** This repo is your *configuration only*. The OpenCode CLI itself must be installed separately (see Step 1 below).
 
 ---
 
 ## 📁 Repository Structure
 
-- `[agent/](file:///c:/AGY-Projects/openCode/agent)` - Custom subagent personas (e.g. `bmad-pm`, `bmad-dev`, `bmad-qa`, etc.).
-- `[commands/](file:///c:/AGY-Projects/openCode/commands)` - Custom slash commands (e.g. `/pm`, `/dev`, `/qa`, `/slash_command_updating`, etc.).
-- `[models/](file:///c:/AGY-Projects/openCode/models)` - Local OpenRouter models cache files categorized by provider/type.
-- `[opencode.json](file:///c:/AGY-Projects/openCode/opencode.json)` - Central OpenCode global configuration file.
-- `[package.json](file:///c:/AGY-Projects/openCode/package.json)` - Package specifications for global plugins like `@opencode-ai/plugin`.
-- `[setup.ps1](file:///c:/AGY-Projects/openCode/setup.ps1)` - PowerShell installation script to link this repo to your global user profile configuration path.
-- `[update_models.js](file:///c:/AGY-Projects/openCode/update_models.js)` - Utility script to fetch and update the latest OpenRouter models.
+- `agent/` — Custom subagent personas (e.g. `bmad-pm`, `bmad-dev`, `bmad-qa`, etc.).
+- `commands/` — Custom slash commands (e.g. `/pm`, `/dev`, `/qa`, `/slash_command_updating`, etc.).
+- `models/` — Local OpenRouter models cache files categorized by provider/type.
+- `opencode.json` — Central OpenCode global configuration file.
+- `package.json` — Package specifications for global plugins like `@opencode-ai/plugin`.
+- `.env` — Your OpenRouter API key (machine-specific, git-ignored).
+- `setup.ps1` — PowerShell script to link this repo to your global user config path.
+- `update_models.js` — Utility script to fetch and update the latest OpenRouter models.
 
 ---
 
 ## 🚀 Installation & Setup (New Machine)
 
-Follow these steps to set up this configuration repository on a new computer:
+### Step 1: Install the OpenCode CLI
 
-### Step 1: Clone the Repository
-Clone this repository to your projects directory (e.g., `C:\AGY-Projects\openCode`):
+OpenCode is a terminal-based TUI coding agent. You must install the CLI binary **before** anything else.
+
+**Option A — npm (recommended):**
 ```powershell
-cd C:\AGY-Projects
-git clone https://github.com/sudomadhatter/OpenChat-Openrouter.git openCode
+npm install -g opencode-ai
 ```
 
-### Step 2: Run the Setup Script
-Open **PowerShell** and run the setup script from the repository root:
+**Option B — Chocolatey:**
 ```powershell
-cd C:\AGY-Projects\openCode
+choco install opencode
+```
+
+**Option C — Scoop:**
+```powershell
+scoop install opencode
+```
+
+Verify the install:
+```powershell
+opencode --version
+```
+
+You should see a version number (e.g. `1.107.0`). If you get "not recognized", close and reopen your terminal, then try again.
+
+---
+
+### Step 2: Enable PowerShell Script Execution (Windows only)
+
+Windows blocks local scripts by default. You must allow them or the PowerShell profile and setup script will fail:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+```
+
+This only needs to be done once per machine.
+
+---
+
+### Step 3: Clone This Repository
+
+Clone to your preferred projects directory:
+```powershell
+cd C:\Users\YOUR_USER\.gemini\antigravity\scratch
+git clone https://github.com/sudomadhatter/OpenChat-Openrouter.git OpenCode
+```
+
+---
+
+### Step 4: Add Your OpenRouter API Key
+
+Each machine needs its own `.env` file with a valid API key. This file is git-ignored and must be created manually:
+
+```powershell
+cd OpenCode
+echo OPENROUTER_API_KEY=sk-or-v1-YOUR_KEY_HERE > .env
+```
+
+Replace `sk-or-v1-YOUR_KEY_HERE` with your actual OpenRouter API key from [openrouter.ai/keys](https://openrouter.ai/keys).
+
+> **Note:** Each machine may use a different API key. The `.env` file is local-only and should never be committed to git.
+
+---
+
+### Step 5: Run the Setup Script
+
+From the repository root, run the setup script:
+```powershell
+cd C:\Users\YOUR_USER\.gemini\antigravity\scratch\OpenCode
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
 
 **What this script does:**
 1. Backs up any existing physical configuration directory at `~/.config/opencode/` to a backup folder.
-2. Creates a **Directory Junction** (reparse link) pointing `C:\Users\YOUR_USER\.config\opencode` directly to `C:\AGY-Projects\openCode`.
-3. Runs `npm install` inside the repository to install and link plugin dependencies globally.
-
-### Step 3: Launch OpenCode
-Restart your terminal and run `opencode` inside any project folder (e.g. `C:\AGY-Projects\aviationChat-AGY`). All your custom subagents and commands will be loaded automatically!
+2. Creates a **Directory Junction** (reparse link) pointing `C:\Users\YOUR_USER\.config\opencode` → this repository.
+3. Runs `npm install` inside the repository to install plugin dependencies.
 
 ---
 
-## 🔄 Updating Models from OpenRouter
+### Step 6: Launch OpenCode
 
-If you need to fetch the latest available models from OpenRouter, run the included Node.js script:
-
+Open any terminal inside a project folder and run:
 ```powershell
-cd C:\AGY-Projects\openCode
-node update_models.js
+opencode
 ```
 
-This will call the OpenRouter API and automatically categorize and overwrite the JSON files in the `[models/](file:///c:/AGY-Projects/openCode/models)` directory with the latest available models.
+The interactive TUI will launch directly in the terminal. All your custom subagents and slash commands will be loaded automatically.
 
 ---
 
-## 🛠️ Adding OpenCode to Another Workspace
+## 🛠️ Adding OpenCode to a Project Workspace
 
-To configure any new or existing project workspace (e.g. `C:\AGY-Projects\my-new-project`) to use your OpenCode setup and load project-specific rules, you only need to create a lightweight config file in the project root.
+To load project-specific rules and instructions when OpenCode launches inside a project, create an `opencode.json` file in that project's root directory.
 
-### Step 1: Create `opencode.json`
-Create a file named `opencode.json` in the root of your project directory.
-
-### Step 2: Add Config Template
-Paste the following template inside the project's `opencode.json`:
-
+### Example `opencode.json`
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
@@ -84,33 +134,53 @@ Paste the following template inside the project's `opencode.json`:
 }
 ```
 
-### Explaining the Fields
-- **`instructions`**: List of markdown rules or context files inside your project. OpenCode will automatically parse and load these files into the context window for all agents. Add or remove paths here to fit your project guidelines.
-- **`skills.paths`**: Directory paths (relative to the project root) containing any custom, project-specific typescript or python tools/skills.
+### Fields
+- **`instructions`** — Markdown files inside your project that OpenCode loads into the context window for all agents. Add or remove paths to fit your project.
+- **`skills.paths`** — Directories (relative to project root) containing custom tools/skills.
 
-> [!NOTE]
-> You **do not** need to create a `.opencode` folder inside your project. All slash commands and subagents are resolved globally from your linked `[openCode](file:///c:/AGY-Projects/openCode)` folder.
+> **Note:** You do **not** need a `.opencode` folder inside your project. All slash commands and subagents are resolved globally from the linked config directory.
 
 ---
 
-## 🌐 Making & Syncing Changes
+## 🔄 Updating Models from OpenRouter
 
-Because of the Directory Junction link:
-1. Any changes made to your settings, agents, or commands (either through the OpenCode interface or editing files manually) update the `[openCode](file:///c:/AGY-Projects/openCode)` folder directly.
-2. To sync your updates across all machines:
-   - Check status and review changes:
-     ```powershell
-     cd C:\AGY-Projects\openCode
-     git status
-     ```
-   - Commit and push your changes:
-     ```powershell
-     git add .
-     git commit -m "feat: updated agent instructions and slash commands"
-     git push origin main
-     ```
-   - On your other machines, pull down the changes:
-     ```powershell
-     cd C:\AGY-Projects\openCode
-     git pull origin main
-     ```
+To fetch the latest available models from OpenRouter:
+
+```powershell
+cd C:\Users\YOUR_USER\.gemini\antigravity\scratch\OpenCode
+node update_models.js
+```
+
+This calls the OpenRouter API and overwrites the JSON files in `models/` with the latest available models, categorized by provider.
+
+---
+
+## 🌐 Syncing Changes Across Machines
+
+Because of the Directory Junction link, any changes made to your settings, agents, or commands update this repo directly.
+
+```powershell
+# Check what changed
+cd C:\Users\YOUR_USER\.gemini\antigravity\scratch\OpenCode
+git status
+
+# Commit and push
+git add .
+git commit -m "feat: updated agent instructions and slash commands"
+git push origin main
+
+# On other machines, pull the changes
+git pull origin main
+```
+
+---
+
+## 🔧 Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `opencode` opens an Antigravity window instead of the TUI | You have a PowerShell alias overriding the command. Run `Get-Alias opencode` to check, then `Remove-Item Alias:\opencode` to clear it. |
+| `opencode: not recognized` | The CLI isn't installed. Run `npm install -g opencode-ai` and restart your terminal. |
+| `scripts disabled on this system` | Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force` |
+| `opencode` asks where to open | The `.cmd` wrapper is missing. Run `npm install -g opencode-ai --force` to regenerate it. |
+| Models not loading | Check that `.env` exists in this repo with a valid `OPENROUTER_API_KEY`. |
