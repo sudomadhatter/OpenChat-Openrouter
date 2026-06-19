@@ -2,22 +2,23 @@
 
 This repository holds your centralized OpenCode configuration, custom subagents, slash commands, model configuration lists, and plugin dependency packages. 
 
-By linking this repository to your global configuration directory, you can sync your agents and slash commands across different computers and projects.
+By linking this repository to your global configuration directory, you can seamlessly sync your agents and slash commands across different computers and project workspaces.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 - `[agent/](file:///c:/AGY-Projects/openCode/agent)` - Custom subagent personas (e.g. `bmad-pm`, `bmad-dev`, `bmad-qa`, etc.).
 - `[commands/](file:///c:/AGY-Projects/openCode/commands)` - Custom slash commands (e.g. `/pm`, `/dev`, `/qa`, `/slash_command_updating`, etc.).
-- `[models/](file:///c:/AGY-Projects/openCode/models)` - Local OpenRouter models cache files.
+- `[models/](file:///c:/AGY-Projects/openCode/models)` - Local OpenRouter models cache files categorized by provider/type.
 - `[opencode.json](file:///c:/AGY-Projects/openCode/opencode.json)` - Central OpenCode global configuration file.
 - `[package.json](file:///c:/AGY-Projects/openCode/package.json)` - Package specifications for global plugins like `@opencode-ai/plugin`.
 - `[setup.ps1](file:///c:/AGY-Projects/openCode/setup.ps1)` - PowerShell installation script to link this repo to your global user profile configuration path.
+- `[update_models.js](file:///c:/AGY-Projects/openCode/update_models.js)` - Utility script to fetch and update the latest OpenRouter models.
 
 ---
 
-## Installation & Setup (New Machine)
+## 🚀 Installation & Setup (New Machine)
 
 Follow these steps to set up this configuration repository on a new computer:
 
@@ -45,33 +46,22 @@ Restart your terminal and run `opencode` inside any project folder (e.g. `C:\AGY
 
 ---
 
-## Making & Syncing Changes
+## 🔄 Updating Models from OpenRouter
 
-Because of the Directory Junction link:
-1. Any changes made to your settings, agents, or commands (either through the OpenCode interface or editing files manually) update the `[openCode](file:///c:/AGY-Projects/openCode)` folder directly.
-2. To sync your updates across all machines:
-   - Check status and review changes:
-     ```powershell
-     cd C:\AGY-Projects\openCode
-     git status
-     ```
-   - Commit and push your changes:
-     ```powershell
-     git add .
-     git commit -m "feat: updated agent instructions and slash commands"
-     git push origin main
-     ```
-   - On your other machines, pull down the changes:
-     ```powershell
-     cd C:\AGY-Projects\openCode
-     git pull origin main
-     ```
+If you need to fetch the latest available models from OpenRouter, run the included Node.js script:
+
+```powershell
+cd C:\AGY-Projects\openCode
+node update_models.js
+```
+
+This will call the OpenRouter API and automatically categorize and overwrite the JSON files in the `[models/](file:///c:/AGY-Projects/openCode/models)` directory with the latest available models.
 
 ---
 
-## Configuring a New Project
+## 🛠️ Adding OpenCode to Another Workspace
 
-To configure any project workspace (e.g. `C:\AGY-Projects\my-new-project`) to use your OpenCode setup and load project-specific rules, you only need to create a lightweight config file in the project root.
+To configure any new or existing project workspace (e.g. `C:\AGY-Projects\my-new-project`) to use your OpenCode setup and load project-specific rules, you only need to create a lightweight config file in the project root.
 
 ### Step 1: Create `opencode.json`
 Create a file named `opencode.json` in the root of your project directory.
@@ -101,3 +91,26 @@ Paste the following template inside the project's `opencode.json`:
 > [!NOTE]
 > You **do not** need to create a `.opencode` folder inside your project. All slash commands and subagents are resolved globally from your linked `[openCode](file:///c:/AGY-Projects/openCode)` folder.
 
+---
+
+## 🌐 Making & Syncing Changes
+
+Because of the Directory Junction link:
+1. Any changes made to your settings, agents, or commands (either through the OpenCode interface or editing files manually) update the `[openCode](file:///c:/AGY-Projects/openCode)` folder directly.
+2. To sync your updates across all machines:
+   - Check status and review changes:
+     ```powershell
+     cd C:\AGY-Projects\openCode
+     git status
+     ```
+   - Commit and push your changes:
+     ```powershell
+     git add .
+     git commit -m "feat: updated agent instructions and slash commands"
+     git push origin main
+     ```
+   - On your other machines, pull down the changes:
+     ```powershell
+     cd C:\AGY-Projects\openCode
+     git pull origin main
+     ```

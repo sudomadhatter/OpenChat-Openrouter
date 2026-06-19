@@ -1,5 +1,45 @@
 [
   {
+    "id": "openai/gpt-chat-latest",
+    "name": "OpenAI: GPT Chat Latest"
+  },
+  {
+    "id": "openai/gpt-5.5-pro",
+    "name": "OpenAI: GPT-5.5 Pro"
+  },
+  {
+    "id": "openai/gpt-5.5",
+    "name": "OpenAI: GPT-5.5"
+  },
+  {
+    "id": "openai/gpt-5.4-image-2",
+    "name": "OpenAI: GPT-5.4 Image 2"
+  },
+  {
+    "id": "openai/gpt-5.4-nano",
+    "name": "OpenAI: GPT-5.4 Nano"
+  },
+  {
+    "id": "openai/gpt-5.4-mini",
+    "name": "OpenAI: GPT-5.4 Mini"
+  },
+  {
+    "id": "openai/gpt-5.4-pro",
+    "name": "OpenAI: GPT-5.4 Pro"
+  },
+  {
+    "id": "openai/gpt-5.4",
+    "name": "OpenAI: GPT-5.4"
+  },
+  {
+    "id": "openai/gpt-5.3-chat",
+    "name": "OpenAI: GPT-5.3 Chat"
+  },
+  {
+    "id": "openai/gpt-5.3-codex",
+    "name": "OpenAI: GPT-5.3-Codex"
+  },
+  {
     "id": "openai/gpt-audio",
     "name": "OpenAI: GPT Audio"
   },
@@ -72,10 +112,6 @@
     "name": "OpenAI: GPT-5 Codex"
   },
   {
-    "id": "openai/gpt-4o-audio-preview",
-    "name": "OpenAI: GPT-4o Audio"
-  },
-  {
     "id": "openai/gpt-5-chat",
     "name": "OpenAI: GPT-5 Chat"
   },
@@ -98,10 +134,6 @@
   {
     "id": "openai/gpt-oss-120b",
     "name": "OpenAI: gpt-oss-120b"
-  },
-  {
-    "id": "openai/gpt-oss-120b:exacto",
-    "name": "OpenAI: gpt-oss-120b (exacto)"
   },
   {
     "id": "openai/gpt-oss-20b:free",
@@ -168,10 +200,6 @@
     "name": "OpenAI: GPT-4o (2024-11-20)"
   },
   {
-    "id": "openai/chatgpt-4o-latest",
-    "name": "OpenAI: ChatGPT-4o"
-  },
-  {
     "id": "openai/gpt-4o-2024-08-06",
     "name": "OpenAI: GPT-4o (2024-08-06)"
   },
@@ -192,24 +220,16 @@
     "name": "OpenAI: GPT-4o"
   },
   {
-    "id": "openai/gpt-4o:extended",
-    "name": "OpenAI: GPT-4o (extended)"
-  },
-  {
     "id": "openai/gpt-4-turbo",
     "name": "OpenAI: GPT-4 Turbo"
-  },
-  {
-    "id": "openai/gpt-3.5-turbo-0613",
-    "name": "OpenAI: GPT-3.5 Turbo (older v0613)"
   },
   {
     "id": "openai/gpt-4-turbo-preview",
     "name": "OpenAI: GPT-4 Turbo Preview"
   },
   {
-    "id": "openai/gpt-4-1106-preview",
-    "name": "OpenAI: GPT-4 Turbo (older v1106)"
+    "id": "openai/gpt-3.5-turbo-0613",
+    "name": "OpenAI: GPT-3.5 Turbo (older v0613)"
   },
   {
     "id": "openai/gpt-3.5-turbo-instruct",
@@ -218,10 +238,6 @@
   {
     "id": "openai/gpt-3.5-turbo-16k",
     "name": "OpenAI: GPT-3.5 Turbo 16k"
-  },
-  {
-    "id": "openai/gpt-4-0314",
-    "name": "OpenAI: GPT-4 (older v0314)"
   },
   {
     "id": "openai/gpt-4",

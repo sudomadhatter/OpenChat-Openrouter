@@ -1,5 +1,61 @@
 [
   {
+    "id": "google/gemini-3.1-flash-image",
+    "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)"
+  },
+  {
+    "id": "google/gemini-3-pro-image",
+    "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)"
+  },
+  {
+    "id": "google/gemini-3.5-flash",
+    "name": "Google: Gemini 3.5 Flash"
+  },
+  {
+    "id": "google/gemini-3.1-flash-lite",
+    "name": "Google: Gemini 3.1 Flash Lite"
+  },
+  {
+    "id": "google/gemma-4-26b-a4b-it:free",
+    "name": "Google: Gemma 4 26B A4B  (free)"
+  },
+  {
+    "id": "google/gemma-4-26b-a4b-it",
+    "name": "Google: Gemma 4 26B A4B "
+  },
+  {
+    "id": "google/gemma-4-31b-it:free",
+    "name": "Google: Gemma 4 31B (free)"
+  },
+  {
+    "id": "google/gemma-4-31b-it",
+    "name": "Google: Gemma 4 31B"
+  },
+  {
+    "id": "google/lyria-3-pro-preview",
+    "name": "Google: Lyria 3 Pro Preview"
+  },
+  {
+    "id": "google/lyria-3-clip-preview",
+    "name": "Google: Lyria 3 Clip Preview"
+  },
+  {
+    "id": "google/gemini-3.1-flash-lite-preview",
+    "name": "Google: Gemini 3.1 Flash Lite Preview"
+  },
+  {
+    "id": "google/gemini-3.1-flash-image-preview",
+    "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)"
+  },
+  {
+    "id": "google/gemini-3.1-pro-preview-customtools",
+    "name": "Google: Gemini 3.1 Pro Preview Custom Tools"
+  },
+  {
+    "id": "google/gemini-3.1-pro-preview",
+    "name": "Google: Gemini 3.1 Pro Preview"
+  },
+  {
     "id": "google/gemini-3-flash-preview",
     "name": "Google: Gemini 3 Flash Preview"
   },
@@ -8,16 +64,8 @@
     "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)"
   },
   {
-    "id": "google/gemini-3-pro-preview",
-    "name": "Google: Gemini 3 Pro Preview"
-  },
-  {
     "id": "google/gemini-2.5-flash-image",
-    "name": "Google: Gemini 2.5 Flash Image (Nano Banana)"
-  },
-  {
-    "id": "google/gemini-2.5-flash-preview-09-2025",
-    "name": "Google: Gemini 2.5 Flash Preview 09-2025"
+    "name": "Google: Nano Banana (Gemini 2.5 Flash Image)"
   },
   {
     "id": "google/gemini-2.5-flash-lite-preview-09-2025",
@@ -26,10 +74,6 @@
   {
     "id": "google/gemini-2.5-flash-lite",
     "name": "Google: Gemini 2.5 Flash Lite"
-  },
-  {
-    "id": "google/gemma-3n-e2b-it:free",
-    "name": "Google: Gemma 3n 2B (free)"
   },
   {
     "id": "google/gemini-2.5-flash",
@@ -44,10 +88,6 @@
     "name": "Google: Gemini 2.5 Pro Preview 06-05"
   },
   {
-    "id": "google/gemma-3n-e4b-it:free",
-    "name": "Google: Gemma 3n 4B (free)"
-  },
-  {
     "id": "google/gemma-3n-e4b-it",
     "name": "Google: Gemma 3n 4B"
   },
@@ -56,47 +96,19 @@
     "name": "Google: Gemini 2.5 Pro Preview 05-06"
   },
   {
-    "id": "google/gemma-3-4b-it:free",
-    "name": "Google: Gemma 3 4B (free)"
-  },
-  {
     "id": "google/gemma-3-4b-it",
     "name": "Google: Gemma 3 4B"
-  },
-  {
-    "id": "google/gemma-3-12b-it:free",
-    "name": "Google: Gemma 3 12B (free)"
   },
   {
     "id": "google/gemma-3-12b-it",
     "name": "Google: Gemma 3 12B"
   },
   {
-    "id": "google/gemma-3-27b-it:free",
-    "name": "Google: Gemma 3 27B (free)"
-  },
-  {
     "id": "google/gemma-3-27b-it",
     "name": "Google: Gemma 3 27B"
   },
   {
-    "id": "google/gemini-2.0-flash-lite-001",
-    "name": "Google: Gemini 2.0 Flash Lite"
-  },
-  {
-    "id": "google/gemini-2.0-flash-001",
-    "name": "Google: Gemini 2.0 Flash"
-  },
-  {
-    "id": "google/gemini-2.0-flash-exp:free",
-    "name": "Google: Gemini 2.0 Flash Experimental (free)"
-  },
-  {
     "id": "google/gemma-2-27b-it",
     "name": "Google: Gemma 2 27B"
-  },
-  {
-    "id": "google/gemma-2-9b-it",
-    "name": "Google: Gemma 2 9B"
   }
 ]
