@@ -87,7 +87,30 @@ Replace `sk-or-v1-YOUR_KEY_HERE` with your actual key from [openrouter.ai/keys](
 
 ---
 
-### Step 5: Run the Setup Script
+### Step 5: Add the PowerShell Profile Auto-Loader
+
+IDE-spawned terminals (Antigravity, VS Code, etc.) often **do not inherit** User-level environment variables set via `SetEnvironmentVariable`. This causes a "missing auth headers" error even though the key is correctly stored.
+
+Fix this permanently by adding an auto-loader to your PowerShell profile:
+
+```powershell
+notepad $PROFILE
+```
+
+Paste this block and save:
+```powershell
+# --- OpenRouter API Key (auto-load from persistent User env var) ---
+if (-not $env:OPENROUTER_API_KEY) {
+    $key = [System.Environment]::GetEnvironmentVariable("OPENROUTER_API_KEY", "User")
+    if ($key) { $env:OPENROUTER_API_KEY = $key }
+}
+```
+
+> **Why is this needed?** `SetEnvironmentVariable("User")` writes to the Windows registry. New Explorer-launched terminals pick it up automatically, but IDE-embedded terminals often fork from a parent process that was started *before* the variable was set. The profile script bridges that gap.
+
+---
+
+### Step 6: Run the Setup Script
 
 From the repository root, run the setup script:
 ```powershell
@@ -102,9 +125,9 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1
 
 ---
 
-### Step 6: Launch OpenCode
+### Step 7: Launch OpenCode
 
-**Close and reopen your terminal** (so the env var is picked up), then from any project folder:
+**Close and reopen your terminal** (so the env var and profile are picked up), then from any project folder:
 ```powershell
 opencode
 ```
@@ -112,6 +135,7 @@ opencode
 The interactive TUI launches directly in the terminal. Type `/models` to select your model (GLM, Claude, GPT, DeepSeek, etc.). All your custom subagents and slash commands are loaded automatically from the linked config.
 
 ---
+
 
 ## 🛠️ Adding OpenCode to a Project Workspace
 
@@ -178,6 +202,7 @@ git pull origin main
 
 | Problem | Fix |
 |---|---|
+| `missing auth headers` | The env var isn't in the current process. Run `. $PROFILE` or restart the terminal. If that doesn't help, verify Step 5 (PowerShell profile auto-loader). |
 | `opencode` opens an Antigravity window instead of the TUI | You have a PowerShell alias overriding the command. Run `Get-Alias opencode` to check, then `Remove-Item Alias:\opencode` to clear it. |
 | `opencode: not recognized` | The CLI isn't installed. Run `npm install -g opencode-ai` and restart your terminal. |
 | `scripts disabled on this system` | Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force` |
