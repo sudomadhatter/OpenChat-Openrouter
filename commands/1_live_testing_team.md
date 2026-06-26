@@ -4,7 +4,7 @@ description: Live Testing Team — Daniel flies the app, Claude watches the back
 
 # /1_live_testing_team — Live Testing Team
 
-Execute the workflow defined in @.agent/workflows/1_live_testing_team.md.
+Execute the workflow defined in @.agents/workflows/1_live_testing_team.md.
 
 **opencode execution notes:**
 - Start BOTH servers in the background so the backend log stream stays readable while Daniel tests.
