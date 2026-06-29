@@ -2,7 +2,7 @@
 description: Pre-dev plan/story audit — run BEFORE coding. Pressure-tests an implementation_plan.md or story against the codebase and the ACs to catch gaps, over-engineering, and contract breaks before they're built.
 ---
 
-# /1_self-audit-stress-test — Pre-Dev Adversarial Audit
+# /sudo-self-audit — Pre-Dev Adversarial Audit
 
 Execute the workflow defined in @.agent/workflows/1_self-audit-stress-test.md.
 
