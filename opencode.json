@@ -15,7 +15,7 @@
     ".agents/rules/artifacts-always-first.md",
     ".agents/rules/code-standards.md",
     ".agents/rules/adk_file_formating.md",
-    ".agents/rules/bmad_code_review_fast_path.md",
+    ".agents/rules/bmad_code_review_sudo_fix.md",
     ".agents/rules/collaborative-debug-first.md",
     ".agents/rules/credential-resolution.md",
     ".agents/rules/dependency-awareness.md",
