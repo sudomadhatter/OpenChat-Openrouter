@@ -10,23 +10,27 @@
   "default_agent": "plan",
   "instructions": [
     "AGENTS.md",
-    ".agent/gemini.md",
-    ".agent/rules/constitution.md",
-    ".agent/rules/code-standards.md",
-    ".agent/rules/adk_file_formating.md",
-    ".agent/rules/bmad_code_review_fast_path.md",
-    ".agent/rules/collaborative-debug-first.md",
-    ".agent/rules/credential-resolution.md",
-    ".agent/rules/dependency-awareness.md",
-    ".agent/rules/powershell-encoding-safety.md",
-    ".agent/rules/pyrefly-paths.md",
-    ".agent/rules/useEffect-dep-array-stability.md",
-    ".agent/rules/voice-agent-architecture.md",
-    ".agent/rules/prompt-tdd.md",
+    ".agents/rules/constitution.md",
+    ".agents/rules/karpathy-guidelines.md",
+    ".agents/rules/artifacts-always-first.md",
+    ".agents/rules/code-standards.md",
+    ".agents/rules/adk_file_formating.md",
+    ".agents/rules/bmad_code_review_fast_path.md",
+    ".agents/rules/collaborative-debug-first.md",
+    ".agents/rules/credential-resolution.md",
+    ".agents/rules/dependency-awareness.md",
+    ".agents/rules/powershell-encoding-safety.md",
+    ".agents/rules/pyrefly-paths.md",
+    ".agents/rules/useEffect-dep-array-stability.md",
+    ".agents/rules/voice-agent-architecture.md",
+    ".agents/rules/prompt-tdd.md",
+    ".agents/rules/constitution.project.md",
     "_bmad-output/project-context.md"
   ],
   "skills": {
-    "paths": [".agent/skills"]
+    "paths": [
+      ".agents/skills"
+    ]
   },
   "permission": {
     "edit": {

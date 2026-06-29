@@ -35,7 +35,7 @@ Based on the goal, output:
 
 ## Step 4: Source-of-truth pointers
 
-If the goal touches FAA accuracy, schemas, or architecture, also flag the relevant constitutional rules from @.agent/rules/constitution.md.
+If the goal touches FAA accuracy, schemas, or architecture, also flag the relevant constitutional rules from @.agents/rules/constitution.md.
 
 ## Notes
 
