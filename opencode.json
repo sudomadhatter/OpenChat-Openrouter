@@ -5,6 +5,23 @@
       "options": {
         "apiKey": "{env:OPENROUTER_API_KEY}"
       }
+    },
+    "nvidia-nim": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "NVIDIA NIM",
+      "options": {
+        "baseURL": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "{env:NVIDIA_API_KEY}"
+      },
+      "models": {
+        "nvidia/nemotron-3.5-nano-30b-a3b": {
+          "name": "NVIDIA Nemotron 3.5 Nano 30B A3B",
+          "limit": {
+            "context": 1000000,
+            "output": 16384
+          }
+        }
+      }
     }
   },
   "default_agent": "plan",
