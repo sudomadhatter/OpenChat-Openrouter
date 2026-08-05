@@ -5,54 +5,37 @@ platforms: [opencode, antigravity]
 
 # /sudo-dev-story-tests — Plan → Self-Audit → Implement → Automate (②)
 
+> **Rules in force for this command:**
+> - `.agents/rules/git-policy.md` — explicit paths only (never `git add -A`/`.`/`-u`), never push `main`, never force-push
+
 Thin orchestrator — builds the story against ①'s red tests and ends with expanded coverage. Project-scoped
 (targets THIS repo).
 
 > Flow position: `sudo-write-story-tests` → **`sudo-dev-story-tests`** → `sudo-code-review`.
 
 ## Step 0 — Resolve the target project (FIRST — before any other step)
-Run from the **command center** (the lobby), this command operates on exactly ONE child project under
-`Projects/`, never the lobby itself:
-0. **Self (sub-project fast path — check FIRST, STOP here if it matches)** — this repo has **no**
-   `Projects/` subfolder → you ARE the project: `PROJECT_ROOT = .`, skip to the binding rule. Don't read
-   `active-project.txt`, parse `$ARGUMENTS` for a project, or ask — cases 1–3 are command-center-only.
-1. **Inline override** — `$ARGUMENTS` begins with a folder name under `Projects/` → that's the target;
-   consume the token (remainder = the real argument: story id, focus…) and write the name alone into
-   `.agents/active-project.txt` (overwrite) so later commands inherit it.
-2. **Active pointer** — else use `.agents/active-project.txt` if it names a folder under `Projects/`.
-3. **Ask** — else STOP and ask Daniel *"Which project are we working in? (e.g. AGY_AVIATIONCHAT)"* —
-   never guess, never operate on the lobby.
-
-Set `PROJECT_ROOT = Projects/<name>` and **echo exactly** `Target: Projects/<name>` before any work.
-
-**Binding rule (EVERY step below):** every "THIS repo", `{project-root}`, and bare path (`_bmad-output/…`,
-`_bmad/…`, `_artifacts/…`, story files, `implementation_plan.md`, test commands) resolves **under
-`PROJECT_ROOT`**. When you invoke a nested `bmad-*` / `1_*` skill, bind its `{project-root}` to
-`PROJECT_ROOT` and read/write only there. A needed path missing under `PROJECT_ROOT` → STOP and say so;
-never fall back to the lobby.
+Bind the target per `.agents/rules/sudo-target-resolution.md` §STD + §BIND: self fast-path → `$ARGUMENTS`
+override (remainder = the real argument: story id, focus…) → `.agents/active-project.txt` → else **STOP
+and ask** — never guess, never operate on the lobby. Set `PROJECT_ROOT` and **echo exactly**
+`Target: Projects/<name>` before any work. Every bare path below resolves under `PROJECT_ROOT` (nested
+`bmad-*`/`1_*` skills bind their `{project-root}` to it); a needed path missing under `PROJECT_ROOT` →
+STOP and say so, never fall back to the lobby.
 
 ## Step 0.5 — Resolve & create the artifact folder (BEFORE any sub-skill writes a file)
-Every artifact this flow produces (plan, self-audit, walkthrough, code-review) lands in ONE story-scoped
-folder — set it **now** so `bmad-dev-story` and the audit don't drop files at the `_artifacts/` root. Per
-`artifacts-always-first`:
-- **Numeric story `E.S`** → epic = leading number (e.g. `11.18` → `11`);
-  `ARTIFACT_DIR = PROJECT_ROOT/_artifacts/epic_<E>/<story-slug>/` — **create `epic_<E>/` if missing**, then
-  the story folder (slug `story-<E>-<S>-<short-title>`), or reuse the existing one on a resume.
-- **TEA / non-numeric id** (e.g. `tea-17`) → nest under the `tea/` bucket: `PROJECT_ROOT/_artifacts/tea/<story-slug>/`.
-- **No story id at all** (a true one-off) → `PROJECT_ROOT/_artifacts/_main/<YYYY-MM-DD>_<slug>/` — the
-  holding bucket; never a dated folder at the `_artifacts/` root.
-
-**Echo** `Artifacts: <ARTIFACT_DIR>` before Step 1. Every step below writes into `ARTIFACT_DIR`; pass it
-explicitly to each sub-skill and **never** let one mint its own root-level or date-stamped folder.
+Per `artifacts-always-first` §2, everything this flow produces lands in ONE story-scoped folder — set it
+now: numeric `E.S` → `ARTIFACT_DIR = PROJECT_ROOT/_artifacts/epic_<E>/story-<E>-<S>-<short-title>/`
+(create `epic_<E>/` if missing; reuse the existing folder on a resume) · TEA / non-numeric id →
+`PROJECT_ROOT/_artifacts/tea/<story-slug>/` · no story id → `PROJECT_ROOT/_artifacts/_main/<YYYY-MM-DD>_<slug>/`
+(the holding bucket; never a dated folder at the `_artifacts/` root). **Echo** `Artifacts: <ARTIFACT_DIR>`
+before Step 1; pass it explicitly to each sub-skill and **never** let one mint its own root-level or
+date-stamped folder.
 
 ## Step 0.6 — Re-enter the story worktree if one already exists (fresh-chat resume)
-This command often runs in a **new chat** that did NOT open the worktree ① or an earlier ② created. Before
-any planning or edit, run `git worktree list` under `PROJECT_ROOT` (`worktree-per-story` → "Resuming"). If a
-`claude/<story-slug>` tree exists, **cd into it and re-bind everything below under it** — story file, ① red
-tests, `ARTIFACT_DIR`, test commands. The story file and reds commonly live ONLY in that tree; a session
-that skips this plans against a checkout that can't see them, or opens a duplicate. If none exists, this is
-the first work session and `bmad-dev-story` opens one at first edit. Echo the case (`Worktree: reused
-<path>` / `none yet — opens at first edit`).
+Before any planning or edit: `git worktree list` under `PROJECT_ROOT` (`worktree-per-story` → "Resuming").
+A `claude/<story-slug>` tree exists → **cd into it and re-bind everything below under it** — story file,
+① red tests, `ARTIFACT_DIR`, test commands (they commonly live ONLY in that tree; skipping this plans
+blind or opens a duplicate). None → first work session; `bmad-dev-story` opens one at first edit. Echo the
+case (`Worktree: reused <path>` / `none yet — opens at first edit`).
 
 ## Step 0.7 — BDD contract gate (HARD — before any planning or code)
 The BDD Vision Lock is a standing phase of this flow: **a story may not be planned or implemented without
@@ -85,18 +68,20 @@ Post the gate message — short, ALWAYS with the clickable plan link (never a ba
 Then **WAIT — modify NO project file, write NO code.** The reply IS the trigger:
 
 - **`continue`** — no model change. Run **`/sudo-self-audit`** on the plan here (pre-dev adversarial
-  stress-test). **Persist as `self-audit-stress-test.md`** (`type: self_audit`) **in `ARTIFACT_DIR`** —
-  inline-only findings do NOT satisfy the protocol (`artifacts-always-first` §7). Fold findings into the
-  plan, then go straight on (Step 2.5 → 3 → 4 → 5) — **no second gate**.
+  stress-test). **Persist by appending `## Self-Audit (<date>)` INTO the plan** (with its
+  `Audit verdict:` line) — inline-only findings do NOT satisfy the protocol, and a standalone audit
+  file is retired (`artifacts-always-first` §7). Then go straight on (Step 2.5 → 3 → 4 → 5) — **no
+  second gate**.
 - **`changed`** — the human ALREADY switched the model; the audit lane. Run **`/sudo-self-audit`** now (on
   the switched model), persist + fold as above — then **STOP AGAIN**: *"Audit done — switch back, then say
   `continue`."* WAIT before Step 2.5/3 — **never implement on the audit-switched model.** This switch-back
   gate exists ONLY after `changed`.
-- **A pasted file path** — another team ran the audit blind; the path IS the handoff. Read it; if outside
-  `ARTIFACT_DIR`, copy it in as `self-audit-stress-test.md` (`type: self_audit`, source noted in
-  frontmatter). Fold its findings into the plan, then proceed — no further stops.
-- **Explicit "skip the audit"** — confirm once; on yes, write a stub `self-audit-stress-test.md` recording
-  `Skipped by human decision (<date>)` so the Step 5 checklist stays honest, and proceed.
+- **A pasted file path** — another team ran the audit blind; the path IS the handoff. Read it and
+  append its content into the plan's **`## Self-Audit (<date>)`** section (source noted in the
+  heading); fold its findings into the affected plan sections, then proceed — no further stops.
+- **Explicit "skip the audit"** — confirm once; on yes, add the one-line `## Self-Audit` section to
+  the plan — `Audit: skipped by human decision (<date>)` — so the Step 5 checklist stays honest, and
+  proceed.
 
 **`continue` always means: run the remainder (Step 2.5 → 3 → 4 → 5) without further stops** — subject only
 to Step 2.5's real-questions rule and the `changed`-path switch-back stop above.
@@ -112,8 +97,14 @@ concern the audit raised that you can't safely resolve yourself.
 
 ## Step 3 — Implement
 Invoke **`bmad-dev-story`** in IMPLEMENT mode: apply the audit, write the code, and drive the ① red tests —
-**including the BDD contract scenarios from the Vision Lock (Step 0.7)** — to green. Run the relevant
-suite(s) and paste the **actual** output (constitution rule). If a test fails, find root cause before fixing.
+**including the BDD contract scenarios from the Vision Lock (Step 0.7)** — to green. Run **scoped** suites
+while you iterate (the story's files + touched modules), and finish this step with one targeted
+**blast-radius pass** over the suites your changed files share — fail fast on collateral while context is
+hot. If a test fails, find root cause before fixing.
+
+**Do NOT run the full suite in this step** (`tests-must-gate-for-real` Rule 4 — scoped runs are *feedback*,
+the full suite is *certification*). Step 4 adds tests, which stales any totals produced now; **Step 4.5 owns
+the one certification run.**
 
 **Every ① red ends green or is quarantined — never shipped red (`tests-must-gate-for-real`).** A red that
 can't go green is the tell ① handed you **fiction** — it asserts what the design never had (copy absent from
@@ -127,19 +118,56 @@ gaps the ATDD pass missed. **Leave evidence:** persist its summary as
 `## Automate: skipped — <rationale>` section into the walkthrough instead. A silent skip is an unfinished
 Step 4 — the Step 5 checklist and the ③ gate verify this.
 
+**Structural reds are wiring proofs, never behavior proofs.** If ① left structural-only guard/wiring reds
+(source-contains asserts), behavioral coverage is **owed here**, not optional — and you prove it non-vacuous
+by **RELOCATING** the guard, never by deleting it, with a **positive control** on every scenario. Full
+contract → `tests-must-gate-for-real` Rule 4.
+
+## Step 4.5 — Certify at the shipping SHA (the ONE full-suite run)
+Governed by `tests-must-gate-for-real` Rule 4 — certification is measured at the SHA that ships, and nothing
+before this step counts. In order:
+
+1. **Machine floor, ONCE, over the final changed-file set** — ruff + pyrefly on changed files (both HARD
+   gates lint WHOLE files, so inherited debt in a file you touched is yours). If `--fix` altered anything,
+   re-run the story contract set.
+2. **Commit** (explicit paths, never `git add -A`) — the SHA has to exist before a run can name it.
+3. **ONE full-suite run per touched stack** — backend: `backend/.venv` pytest with the project's canonical
+   runner flags (the runner AIDEV-NOTE in `backend/requirements.txt` is the ONE source of truth). E2E tier
+   touched → the **FULL-TREE** emulator run; `-k`/single-file emulator runs are debug-only and **never
+   citable**. Red here → fix, re-commit, re-run: only the LAST run is the certification.
+4. **Emit the certification handoff** — `_bmad-output/test-artifacts/certification-<story>.json`, one
+   `stacks` entry per stack you ran:
+   `{"story","sha","utc","stacks":{"<stack>":{"cmd","passed","skipped","failed","seconds"}}}` — **and**
+   paste the actual output + `git rev-parse HEAD` into the walkthrough. **INVARIANT: the totals MUST come
+   from a run at exactly that SHA.** Any code or test change after it voids the pair (repeat from 2);
+   artifact/doc-only changes are exempt. ③ compares this `sha` to the HEAD under review — match → it
+   inherits your green; miss → it pays for the full suite again.
+5. **Finalize the automate summary's suite-result line NOW** — summary, JSON, and walkthrough carry the
+   SAME pair; never two documents with divergent totals. **Re-run nothing this run subsumes** — a hedge is
+   a Suite Ledger row that needs a written "why."
+
 ## Step 5 — Close-out artifacts (MANDATORY — never skip, even on "just do it")
 The Always-On **`artifacts-always-first`** rule governs this step. Before reporting Done, `ARTIFACT_DIR`
-MUST hold all three files, each carrying the `IsArtifact: true` + `ArtifactMetadata` frontmatter
+MUST hold the TWO living docs, each carrying the `IsArtifact: true` + `ArtifactMetadata` frontmatter
 (correct `type:`):
 
-- [ ] **`implementation_plan.md`** (`type: implementation_plan`) — from Step 1, frontmatter present (§2).
-- [ ] **`self-audit-stress-test.md`** (`type: self_audit`) — the persisted Step 2 audit, a standalone file,
-      NOT inline-only and NOT merely folded into the plan (§7).
-- [ ] **`walkthrough.md`** (`type: walkthrough`) — the ONE closing doc (§5): narrative (what changed
-      file-by-file & why), the red→green test story, the **actual pasted test output**, an AC→evidence
-      matrix, then a **`## Task Checklist`** section (final TodoWrite snapshot) and a **`## Your Actions`**
-      section (what landed — worktree branch + commits — plus anything still on the human). **Required even
-      when told to "skip the plan, just do it" — the walkthrough is never skippable.**
+- [ ] **`implementation_plan.md`** (`type: implementation_plan`) — from Step 1, frontmatter present
+      (§2), **including its `## Self-Audit (<date>)` section** with the `Audit verdict:` line (appended
+      at Step 2 — a standalone audit file is retired per §7; a missing section = Step 2 never ran).
+- [ ] **`walkthrough.md`** (`type: walkthrough`) — the ONE closing doc, outline-first (§5): header →
+      **`## Task Checklist`** (final TodoWrite snapshot as the outline — pitfalls, findings, and
+      plan-vs-built deviations indented ONLY under the tasks that fought back; clean tasks bare) →
+      **`## Evidence`** (the ONE AC→evidence matrix + the **actual pasted** certification totals + SHA)
+      → a **`## Suite Ledger`** section (below) → **`## Your Actions`** (what landed — worktree branch +
+      commits — plus anything still on the human). ③ appends `## Code Review` later — never pre-write
+      it. **Required even when told to "skip the plan, just do it" — the walkthrough is never
+      skippable.**
+- [ ] **`## Suite Ledger`** — one row per suite invocation this story:
+      `scope · command · duration · result · why this run`. The Step-4.5 certification row carries the SHA.
+      The table is **per story, not per command** — ③ appends its own rows to it. This is how a redundant
+      run becomes visible: a hedge re-run has to write down its "why."
+- [ ] **Certification handoff (Step 4.5)** — `_bmad-output/test-artifacts/certification-<story>.json` exists
+      and its `sha` equals the current HEAD (artifact/doc-only commits after it are exempt).
 - [ ] **Automate evidence (Step 4)** — `_bmad-output/test-artifacts/automation-summary-<story>.md` exists,
       OR the walkthrough carries an explicit `## Automate: skipped — <rationale>` section. (Lives with the
       TEA outputs, not `ARTIFACT_DIR`.) A silent skip fails this checklist.
@@ -148,7 +176,7 @@ Post a clickable Markdown link to every artifact in the chat that same turn — 
 
 ## Done
 Report: plan-vs-built deltas, audit findings applied, tests now green (paste output), coverage added, and
-the three Step-5 artifact links. Hand to `sudo-code-review`. The dev step **may advance the story to
+the two Step-5 artifact links. Hand to `sudo-code-review`. The dev step **may advance the story to
 `review`** — bmad-dev-story's Step 9 does this and we let it. **Never flip to `done`** — Daniel's call at
 close-out via `/sudo-update-sprint-memory`. **Git:** commit freely inside the story worktree (explicit paths,
 never `git add -A`); do NOT land it on `main_debug` — Step 7 of `/sudo-update-sprint-memory` owns that push

@@ -4,6 +4,9 @@ description: Push & promote with the E2E gate — push main_debug, or promote ma
 
 # /sudo-push-e2e — Push, Gate, Promote, Deploy
 
+> **Rules in force for this command:**
+> - `.agents/rules/git-policy.md` — explicit paths only (never `git add -A`/`.`/`-u`), never push `main`, never force-push
+
 The one shipping command. It moves verified work from the development line (`main_debug`) toward the
 production line (`main`), and it **refuses to touch `main` until the end-to-end suite is green**.
 
@@ -19,16 +22,9 @@ cherry-pick promotion, reconcile so `main_debug` contains `main` again (Step 5).
 3. **The gate is not optional**: a red gate STOPS the command. Report what failed; do not "push anyway".
 
 ## Step 0 — Resolve the target project (FIRST — before anything else)
-Run from the **command center** (the lobby), this operates on exactly ONE child project under
-`Projects/`, never the lobby itself:
-0. **Self (sub-project fast path)** — no `Projects/` subfolder here → you ARE the project:
-   `PROJECT_ROOT = .`, skip ahead.
-1. **Inline override** — if `$ARGUMENTS` begins with a name matching a folder under `Projects/`,
-   that is the target; consume the token. Write it to `.agents/active-project.txt`.
-2. **Active pointer** — else read `.agents/active-project.txt`.
-3. **Ask** — else STOP and ask.
-
-Set `PROJECT_ROOT` and **echo exactly** `Target: Projects/<name>`. All git/test commands below run
+Bind the target per `.agents/rules/sudo-target-resolution.md` §STD + §BIND: self fast-path → `$ARGUMENTS`
+override → `.agents/active-project.txt` → else **STOP and ask** — never guess, never operate on the
+lobby. Set `PROJECT_ROOT` and **echo exactly** `Target: Projects/<name>`. All git/test commands below run
 inside `PROJECT_ROOT`.
 
 ## Step 1 — Pick the path
@@ -54,8 +50,8 @@ decide together.
    If any required deployment credentials are missing, STOP and warn the user.
 
 **Full gate (paths B and C, additionally):**
-4. Run **`/sudo-e2e`** — the real end-to-end suite (emulator-backed, seeded users). It must finish
-   **green**. Its report is the promotion evidence; link it in the ledger row (Step 7).
+4. Run **`/sudo-e2e`** — it must finish **green**. Its report is the promotion evidence; link it in the
+   ledger row (Step 7).
 
 Any failure → **STOP**. Summarize the failures, file/link the evidence, and suggest the lane
 (`/sudo-quick-dev` or the ①②③ story loop). Do not proceed.
