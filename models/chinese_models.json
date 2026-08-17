@@ -1,11 +1,51 @@
 [
   {
+    "id": "qwen/qwen3.8-27b",
+    "name": "Qwen: Qwen3.8 27B"
+  },
+  {
+    "id": "qwen/qwen3.8-2.4t-a95b",
+    "name": "Qwen: Qwen3.8 2.4T A95B"
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro-0813",
+    "name": "DeepSeek: DeepSeek V4 Pro 0813"
+  },
+  {
+    "id": "qwen/qwen3.8-max",
+    "name": "Qwen: Qwen3.8 Max"
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash-0731",
+    "name": "DeepSeek: DeepSeek V4 Flash 0731"
+  },
+  {
+    "id": "qwen/qwen3.7-flash",
+    "name": "Qwen: Qwen3.7 Flash"
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "name": "MoonshotAI: Kimi K3"
+  },
+  {
     "id": "z-ai/glm-5.2",
     "name": "Z.ai: GLM 5.2"
   },
   {
+    "id": "z-ai/glm-5.2:batch",
+    "name": "Z.ai: GLM 5.2 (batch)"
+  },
+  {
+    "id": "z-ai/glm-5.2:free",
+    "name": "Z.ai: GLM 5.2 (free)"
+  },
+  {
     "id": "moonshotai/kimi-k2.7-code",
     "name": "MoonshotAI: Kimi K2.7 Code"
+  },
+  {
+    "id": "moonshotai/kimi-k2.7-code:batch",
+    "name": "MoonshotAI: Kimi K2.7 Code (batch)"
   },
   {
     "id": "qwen/qwen3.7-plus",
@@ -37,11 +77,11 @@
   },
   {
     "id": "deepseek/deepseek-v4-pro",
-    "name": "DeepSeek: DeepSeek V4 Pro"
+    "name": "DeepSeek: DeepSeek V4 Pro 0423"
   },
   {
     "id": "deepseek/deepseek-v4-flash",
-    "name": "DeepSeek: DeepSeek V4 Flash"
+    "name": "DeepSeek: DeepSeek V4 Flash 0423"
   },
   {
     "id": "moonshotai/kimi-k2.6",
@@ -54,6 +94,10 @@
   {
     "id": "qwen/qwen3.6-plus",
     "name": "Qwen: Qwen3.6 Plus"
+  },
+  {
+    "id": "z-ai/glm-5v-turbo",
+    "name": "Z.ai: GLM 5V Turbo"
   },
   {
     "id": "z-ai/glm-5-turbo",
@@ -180,20 +224,16 @@
     "name": "Qwen: Qwen3 Next 80B A3B Thinking"
   },
   {
-    "id": "qwen/qwen3-next-80b-a3b-instruct:free",
-    "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)"
-  },
-  {
     "id": "qwen/qwen3-next-80b-a3b-instruct",
     "name": "Qwen: Qwen3 Next 80B A3B Instruct"
   },
   {
-    "id": "qwen/qwen-plus-2025-07-28:thinking",
-    "name": "Qwen: Qwen Plus 0728 (thinking)"
-  },
-  {
     "id": "qwen/qwen-plus-2025-07-28",
     "name": "Qwen: Qwen Plus 0728"
+  },
+  {
+    "id": "qwen/qwen-plus-2025-07-28:thinking",
+    "name": "Qwen: Qwen Plus 0728 (thinking)"
   },
   {
     "id": "moonshotai/kimi-k2-0905",
@@ -230,10 +270,6 @@
   {
     "id": "qwen/qwen3-235b-a22b-thinking-2507",
     "name": "Qwen: Qwen3 235B A22B Thinking 2507"
-  },
-  {
-    "id": "qwen/qwen3-coder:free",
-    "name": "Qwen: Qwen3 Coder 480B A35B (free)"
   },
   {
     "id": "qwen/qwen3-coder",

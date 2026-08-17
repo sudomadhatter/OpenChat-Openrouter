@@ -1,5 +1,133 @@
 [
   {
+    "id": "dots-studio/dots-3-note-preview:free",
+    "name": "Dots Studio: Dots3-Note Preview (free)"
+  },
+  {
+    "id": "bytedance-seed/seed-2-1-turbo",
+    "name": "ByteDance Seed: Seed 2.1 Turbo"
+  },
+  {
+    "id": "bytedance-seed/seed-2.0-code",
+    "name": "ByteDance Seed: Seed-2.0-Code"
+  },
+  {
+    "id": "x-ai/grok-4.6",
+    "name": "SpaceXAI: Grok 4.6"
+  },
+  {
+    "id": "liquid/lfm-2.5-2.6b:free",
+    "name": "LiquidAI: LFM2.5-2.6B (free)"
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning",
+    "name": "NVIDIA: Nemotron 3.5 Lightning"
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning:free",
+    "name": "NVIDIA: Nemotron 3.5 Lightning (free)"
+  },
+  {
+    "id": "sakana/sakana-namazu",
+    "name": "Sakana: Sakana Namazu"
+  },
+  {
+    "id": "upstage/solar-pro4",
+    "name": "Upstage: Solar Pro 4"
+  },
+  {
+    "id": "meta/muse-glimmer-30b",
+    "name": "Meta: Muse Glimmer 30B"
+  },
+  {
+    "id": "meta/muse-spark-1.2",
+    "name": "Meta: Muse Spark 1.2"
+  },
+  {
+    "id": "~deepseek/deepseek-v4-flash-latest",
+    "name": "DeepSeek V4 Flash Latest"
+  },
+  {
+    "id": "thinkingmachines/inkling-small",
+    "name": "Thinking Machines: Inkling Small"
+  },
+  {
+    "id": "inclusionai/ling-3.0-flash",
+    "name": "Ling-3.0-flash"
+  },
+  {
+    "id": "poolside/laguna-s-2.1",
+    "name": "Poolside: Laguna S 2.1"
+  },
+  {
+    "id": "poolside/laguna-s-2.1:free",
+    "name": "Poolside: Laguna S 2.1 (free)"
+  },
+  {
+    "id": "meituan/longcat-2.0",
+    "name": "Meituan: LongCat 2.0"
+  },
+  {
+    "id": "thinkingmachines/inkling",
+    "name": "Thinking Machines: Inkling"
+  },
+  {
+    "id": "thinkingmachines/inkling:batch",
+    "name": "Thinking Machines: Inkling (batch)"
+  },
+  {
+    "id": "openrouter/auto-beta",
+    "name": "Auto Router (Beta)"
+  },
+  {
+    "id": "meta/muse-spark-1.1",
+    "name": "Meta: Muse Spark 1.1"
+  },
+  {
+    "id": "kwaipilot/kat-coder-air-v2.5",
+    "name": "Kwaipilot: KAT-Coder-Air V2.5"
+  },
+  {
+    "id": "kwaipilot/kat-coder-pro-v2.5",
+    "name": "Kwaipilot: KAT-Coder-Pro V2.5"
+  },
+  {
+    "id": "x-ai/grok-4.5",
+    "name": "SpaceXAI: Grok 4.5"
+  },
+  {
+    "id": "~x-ai/grok-latest",
+    "name": "xAI: Grok Latest"
+  },
+  {
+    "id": "aion-labs/aion-3.0-mini",
+    "name": "AionLabs: Aion-3.0-Mini"
+  },
+  {
+    "id": "aion-labs/aion-3.0",
+    "name": "AionLabs: Aion-3.0"
+  },
+  {
+    "id": "tencent/hy3",
+    "name": "Tencent: Hy3"
+  },
+  {
+    "id": "poolside/laguna-xs-2.1",
+    "name": "Poolside: Laguna XS 2.1"
+  },
+  {
+    "id": "poolside/laguna-xs-2.1:free",
+    "name": "Poolside: Laguna XS 2.1 (free)"
+  },
+  {
+    "id": "nex-agi/nex-n2-mini",
+    "name": "Nex AGI: Nex-N2-Mini"
+  },
+  {
+    "id": "sakana/fugu-ultra",
+    "name": "Sakana: Fugu Ultra"
+  },
+  {
     "id": "openrouter/fusion",
     "name": "OpenRouter: Fusion"
   },
@@ -8,24 +136,32 @@
     "name": "Anthropic: Claude Fable Latest"
   },
   {
-    "id": "nex-agi/nex-n2-pro:free",
-    "name": "Nex AGI: Nex-N2-Pro (free)"
+    "id": "nex-agi/nex-n2-pro",
+    "name": "Nex AGI: Nex-N2-Pro"
   },
   {
     "id": "nvidia/nemotron-3.5-content-safety:free",
     "name": "NVIDIA: Nemotron 3.5 Content Safety (free)"
   },
   {
-    "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "name": "NVIDIA: Nemotron 3 Ultra (free)"
-  },
-  {
     "id": "nvidia/nemotron-3-ultra-550b-a55b",
     "name": "NVIDIA: Nemotron 3 Ultra"
   },
   {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+    "name": "NVIDIA: Nemotron 3 Ultra (batch)"
+  },
+  {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "name": "NVIDIA: Nemotron 3 Ultra (free)"
+  },
+  {
     "id": "minimax/minimax-m3",
     "name": "MiniMax: MiniMax M3"
+  },
+  {
+    "id": "minimax/minimax-m3:batch",
+    "name": "MiniMax: MiniMax M3 (batch)"
   },
   {
     "id": "stepfun/step-3.7-flash",
@@ -33,7 +169,7 @@
   },
   {
     "id": "x-ai/grok-build-0.1",
-    "name": "xAI: Grok Build 0.1"
+    "name": "SpaceXAI: Grok Build 0.1"
   },
   {
     "id": "perceptron/perceptron-mk1",
@@ -45,35 +181,15 @@
   },
   {
     "id": "x-ai/grok-4.3",
-    "name": "xAI: Grok 4.3"
+    "name": "SpaceXAI: Grok 4.3"
   },
   {
     "id": "ibm-granite/granite-4.1-8b",
     "name": "IBM: Granite 4.1 8B"
   },
   {
-    "id": "openrouter/owl-alpha",
-    "name": "Owl Alpha"
-  },
-  {
     "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "name": "NVIDIA: Nemotron 3 Nano Omni (free)"
-  },
-  {
-    "id": "poolside/laguna-xs.2:free",
-    "name": "Poolside: Laguna XS.2 (free)"
-  },
-  {
-    "id": "poolside/laguna-xs.2",
-    "name": "Poolside: Laguna XS.2"
-  },
-  {
-    "id": "poolside/laguna-m.1:free",
-    "name": "Poolside: Laguna M.1 (free)"
-  },
-  {
-    "id": "poolside/laguna-m.1",
-    "name": "Poolside: Laguna M.1"
   },
   {
     "id": "~anthropic/claude-haiku-latest",
@@ -137,11 +253,11 @@
   },
   {
     "id": "x-ai/grok-4.20-multi-agent",
-    "name": "xAI: Grok 4.20 Multi-Agent"
+    "name": "SpaceXAI: Grok 4.20 Multi-Agent"
   },
   {
     "id": "x-ai/grok-4.20",
-    "name": "xAI: Grok 4.20"
+    "name": "SpaceXAI: Grok 4.20"
   },
   {
     "id": "kwaipilot/kat-coder-pro-v2",
@@ -156,12 +272,12 @@
     "name": "MiniMax: MiniMax M2.7"
   },
   {
-    "id": "nvidia/nemotron-3-super-120b-a12b:free",
-    "name": "NVIDIA: Nemotron 3 Super (free)"
-  },
-  {
     "id": "nvidia/nemotron-3-super-120b-a12b",
     "name": "NVIDIA: Nemotron 3 Super"
+  },
+  {
+    "id": "nvidia/nemotron-3-super-120b-a12b:free",
+    "name": "NVIDIA: Nemotron 3 Super (free)"
   },
   {
     "id": "bytedance-seed/seed-2.0-lite",
@@ -174,10 +290,6 @@
   {
     "id": "bytedance-seed/seed-2.0-mini",
     "name": "ByteDance Seed: Seed-2.0-Mini"
-  },
-  {
-    "id": "liquid/lfm-2-24b-a2b",
-    "name": "LiquidAI: LFM2-24B-A2B"
   },
   {
     "id": "aion-labs/aion-2.0",
@@ -208,14 +320,6 @@
     "name": "Writer: Palmyra X5"
   },
   {
-    "id": "liquid/lfm-2.5-1.2b-thinking:free",
-    "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)"
-  },
-  {
-    "id": "liquid/lfm-2.5-1.2b-instruct:free",
-    "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)"
-  },
-  {
     "id": "bytedance-seed/seed-1.6-flash",
     "name": "ByteDance Seed: Seed 1.6 Flash"
   },
@@ -228,20 +332,16 @@
     "name": "MiniMax: MiniMax M2.1"
   },
   {
-    "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-    "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
-  },
-  {
     "id": "nvidia/nemotron-3-nano-30b-a3b",
     "name": "NVIDIA: Nemotron 3 Nano 30B A3B"
   },
   {
-    "id": "relace/relace-search",
-    "name": "Relace: Relace Search"
+    "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+    "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
   },
   {
-    "id": "essentialai/rnj-1-instruct",
-    "name": "EssentialAI: Rnj 1 Instruct"
+    "id": "relace/relace-search",
+    "name": "Relace: Relace Search"
   },
   {
     "id": "openrouter/bodybuilder",
@@ -250,14 +350,6 @@
   {
     "id": "amazon/nova-2-lite-v1",
     "name": "Amazon: Nova 2 Lite"
-  },
-  {
-    "id": "arcee-ai/trinity-mini",
-    "name": "Arcee AI: Trinity Mini"
-  },
-  {
-    "id": "prime-intellect/intellect-3",
-    "name": "Prime Intellect: INTELLECT-3"
   },
   {
     "id": "deepcogito/cogito-v2.1-671b",
@@ -280,14 +372,6 @@
     "name": "IBM: Granite 4.0 Micro"
   },
   {
-    "id": "microsoft/phi-4-mini-instruct",
-    "name": "Microsoft: Phi 4 Mini Instruct"
-  },
-  {
-    "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-    "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5"
-  },
-  {
     "id": "thedrummer/cydonia-24b-v4.1",
     "name": "TheDrummer: Cydonia 24B V4.1"
   },
@@ -308,12 +392,8 @@
     "name": "ByteDance: UI-TARS 7B "
   },
   {
-    "id": "switchpoint/router",
-    "name": "Switchpoint Router"
-  },
-  {
-    "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-    "name": "Venice: Uncensored (free)"
+    "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "name": "Venice: Uncensored"
   },
   {
     "id": "tencent/hunyuan-a13b-instruct",
@@ -340,24 +420,12 @@
     "name": "Arcee AI: Virtuoso Large"
   },
   {
-    "id": "arcee-ai/coder-large",
-    "name": "Arcee AI: Coder Large"
-  },
-  {
     "id": "rekaai/reka-flash-3",
     "name": "Reka Flash 3"
   },
   {
     "id": "thedrummer/skyfall-36b-v2",
     "name": "TheDrummer: Skyfall 36B V2"
-  },
-  {
-    "id": "aion-labs/aion-1.0",
-    "name": "AionLabs: Aion-1.0"
-  },
-  {
-    "id": "aion-labs/aion-1.0-mini",
-    "name": "AionLabs: Aion-1.0-Mini"
   },
   {
     "id": "aion-labs/aion-rp-llama-3.1-8b",
@@ -370,10 +438,6 @@
   {
     "id": "microsoft/phi-4",
     "name": "Microsoft: Phi 4"
-  },
-  {
-    "id": "sao10k/l3.1-70b-hanami-x1",
-    "name": "Sao10K: Llama 3.1 70B Hanami x1"
   },
   {
     "id": "sao10k/l3.3-euryale-70b",
@@ -398,14 +462,6 @@
   {
     "id": "anthracite-org/magnum-v4-72b",
     "name": "Magnum v4 72B"
-  },
-  {
-    "id": "inflection/inflection-3-productivity",
-    "name": "Inflection: Inflection 3 Productivity"
-  },
-  {
-    "id": "inflection/inflection-3-pi",
-    "name": "Inflection: Inflection 3 Pi"
   },
   {
     "id": "thedrummer/rocinante-12b",
